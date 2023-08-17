@@ -6,6 +6,7 @@ import { createClient, repositoryName } from '@/prismicio'
 import { PrismicPreview } from '@prismicio/next'
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
+import { SettingsDocument } from '../../prismicio-types'
 
 export async function generateMetadata(): Promise<Metadata> {
   const client = createClient()
