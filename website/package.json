@@ -7,7 +7,9 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "slicemachine": "start-slicemachine"
+    "slicemachine": "start-slicemachine",
+    "logout": "prismic logout",
+    "login": "prismic login"
   },
   "dependencies": {
     "@prismicio/client": "^7.1.1",
