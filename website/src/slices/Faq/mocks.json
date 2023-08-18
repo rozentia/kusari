@@ -1,0 +1,59 @@
+[
+	{
+		"__TYPE__": "SharedSliceContent",
+		"variation": "default",
+		"primary": {
+			"heading": {
+				"__TYPE__": "FieldContent",
+				"value": "bright",
+				"type": "Text"
+			},
+			"text": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "paragraph",
+						"content": {
+							"text": "Anim irure veniam quis anim Lorem exercitation aliqua quis. Minim velit cillum sunt dolor fugiat eu cupidatat. Dolore veniam qui ex qui officia proident culpa minim deserunt pariatur aute."
+						}
+					}
+				]
+			}
+		},
+		"items": [
+			{
+				"__TYPE__": "GroupItemContent",
+				"value": [
+					[
+						"question",
+						{
+							"__TYPE__": "StructuredTextContent",
+							"value": [
+								{
+									"type": "paragraph",
+									"content": {
+										"text": "Eu occaecat minim proident veniam laborum."
+									}
+								}
+							]
+						}
+					],
+					[
+						"answer",
+						{
+							"__TYPE__": "StructuredTextContent",
+							"value": [
+								{
+									"type": "paragraph",
+									"content": {
+										"text": "Ut reprehenderit tempor qui officia in occaecat commodo minim id in nostrud eiusmod. Magna id esse laborum duis sint pariatur reprehenderit sunt est eu reprehenderit id exercitation Lorem."
+									}
+								}
+							]
+						}
+					]
+				]
+			}
+		]
+	}
+]

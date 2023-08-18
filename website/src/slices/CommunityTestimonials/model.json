@@ -1,0 +1,36 @@
+{
+  "id": "community_testimonials",
+  "type": "SharedSlice",
+  "name": "CommunityTestimonials",
+  "description": "CommunityTestimonials",
+  "variations": [
+    {
+      "id": "default",
+      "name": "Default",
+      "docURL": "...",
+      "version": "initial",
+      "description": "Default",
+      "imageUrl": "",
+      "primary": {
+        "title": {
+          "type": "Text",
+          "config": { "label": "Title", "placeholder": "" }
+        },
+        "tag": {
+          "type": "Text",
+          "config": { "label": "Tag", "placeholder": "" }
+        }
+      },
+      "items": {
+        "testimonial": {
+          "type": "Link",
+          "config": {
+            "label": "Testimonial",
+            "select": "document",
+            "customtypes": ["testimonial"]
+          }
+        }
+      }
+    }
+  ]
+}

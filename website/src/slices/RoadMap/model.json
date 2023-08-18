@@ -1,0 +1,150 @@
+{
+  "id": "road_map",
+  "type": "SharedSlice",
+  "name": "RoadMap",
+  "description": "RoadMap",
+  "variations": [
+    {
+      "id": "default",
+      "name": "Default",
+      "docURL": "...",
+      "version": "initial",
+      "description": "Default",
+      "imageUrl": "",
+      "primary": {
+        "heading": {
+          "type": "Text",
+          "config": { "label": "Heading", "placeholder": "" }
+        },
+        "tagline": {
+          "type": "Text",
+          "config": { "label": "Tagline", "placeholder": "" }
+        },
+        "button_link": {
+          "type": "Link",
+          "config": {
+            "label": "Button Link",
+            "placeholder": "",
+            "select": null
+          }
+        },
+        "button_label": {
+          "type": "Text",
+          "config": { "label": "Button Label", "placeholder": "" }
+        }
+      },
+      "items": {
+        "title": {
+          "type": "Text",
+          "config": { "label": "Title", "placeholder": "" }
+        },
+        "text": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Text",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "multi": "paragraph,strong,em,hyperlink"
+          }
+        },
+        "short_text": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Short Text",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "single": "paragraph,strong,em"
+          }
+        },
+        "date": {
+          "type": "Date",
+          "config": { "label": "Date", "placeholder": "" }
+        },
+        "status": {
+          "type": "Select",
+          "config": {
+            "label": "Status",
+            "placeholder": "",
+            "options": ["inProgress", "inReview", "completed"],
+            "default_value": "inProgress"
+          }
+        },
+        "image": {
+          "type": "Image",
+          "config": { "label": "Image", "constraint": {}, "thumbnails": [] }
+        }
+      }
+    },
+    {
+      "id": "detail",
+      "name": "Detail",
+      "docURL": "...",
+      "version": "initial",
+      "description": "Default",
+      "imageUrl": "",
+      "primary": {
+        "heading": {
+          "type": "Text",
+          "config": { "label": "Heading", "placeholder": "" }
+        },
+        "tagline": {
+          "type": "Text",
+          "config": { "label": "Tagline", "placeholder": "" }
+        },
+        "button_link": {
+          "type": "Link",
+          "config": {
+            "label": "Button Link",
+            "placeholder": "",
+            "select": null
+          }
+        },
+        "button_label": {
+          "type": "Text",
+          "config": { "label": "Button Label", "placeholder": "" }
+        }
+      },
+      "items": {
+        "title": {
+          "type": "Text",
+          "config": { "label": "Title", "placeholder": "" }
+        },
+        "text": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Text",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "multi": "paragraph,strong,em,hyperlink"
+          }
+        },
+        "short_text": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Short Text",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "single": "paragraph,strong,em"
+          }
+        },
+        "date": {
+          "type": "Date",
+          "config": { "label": "Date", "placeholder": "" }
+        },
+        "status": {
+          "type": "Select",
+          "config": {
+            "label": "Status",
+            "placeholder": "",
+            "options": ["inProgress", "inReview", "completed"],
+            "default_value": "inProgress"
+          }
+        },
+        "image": {
+          "type": "Image",
+          "config": { "label": "Image", "constraint": {}, "thumbnails": [] }
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,81 @@
+{
+  "id": "pricing",
+  "type": "SharedSlice",
+  "name": "Pricing",
+  "description": "Pricing",
+  "variations": [
+    {
+      "id": "default",
+      "name": "Default",
+      "docURL": "...",
+      "version": "initial",
+      "description": "Default",
+      "imageUrl": "",
+      "primary": {
+        "heading": {
+          "type": "Text",
+          "config": { "label": "Heading", "placeholder": "" }
+        },
+        "tagline": {
+          "type": "Text",
+          "config": { "label": "Tagline", "placeholder": "" }
+        },
+        "link_to_details": {
+          "type": "Link",
+          "config": {
+            "label": "Link to Details",
+            "placeholder": "",
+            "select": null
+          }
+        },
+        "label_to_details": {
+          "type": "Text",
+          "config": { "label": "Label to Details", "placeholder": "" }
+        }
+      },
+      "items": {
+        "prices": {
+          "type": "Link",
+          "config": {
+            "label": "Prices",
+            "select": "document",
+            "customtypes": ["price"]
+          }
+        }
+      }
+    },
+    {
+      "id": "detailed",
+      "name": "Detailed",
+      "docURL": "...",
+      "version": "initial",
+      "description": "Default",
+      "imageUrl": "",
+      "primary": {
+        "heading": {
+          "type": "Text",
+          "config": { "label": "Heading", "placeholder": "" }
+        },
+        "text": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Text",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "multi": "paragraph,strong,em"
+          }
+        }
+      },
+      "items": {
+        "prices": {
+          "type": "Link",
+          "config": {
+            "label": "Prices",
+            "select": "document",
+            "customtypes": ["price"]
+          }
+        }
+      }
+    }
+  ]
+}

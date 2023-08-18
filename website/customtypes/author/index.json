@@ -1,0 +1,57 @@
+{
+  "id": "author",
+  "label": "Author",
+  "format": "custom",
+  "repeatable": true,
+  "status": true,
+  "json": {
+    "Main": {
+      "uid": { "config": { "label": "UID" }, "type": "UID" },
+      "name": {
+        "type": "Text",
+        "config": { "label": "Name", "placeholder": "" }
+      },
+      "last_name": {
+        "type": "Text",
+        "config": { "label": "Last Name", "placeholder": "" }
+      },
+      "company": {
+        "type": "Text",
+        "config": { "label": "Company", "placeholder": "" }
+      },
+      "position": {
+        "type": "Text",
+        "config": { "label": "Position", "placeholder": "" }
+      },
+      "networks": {
+        "type": "Group",
+        "config": {
+          "label": "Networks",
+          "fields": {
+            "network": {
+              "type": "Select",
+              "config": {
+                "label": "Network",
+                "placeholder": "",
+                "options": [
+                  "Facebook",
+                  "Instagram",
+                  "LinkedIn",
+                  "YouTube",
+                  "Medium",
+                  "Telegram",
+                  "TikTok",
+                  "Dribble"
+                ]
+              }
+            },
+            "link": {
+              "type": "Link",
+              "config": { "label": "Link", "placeholder": "", "select": null }
+            }
+          }
+        }
+      }
+    }
+  }
+}

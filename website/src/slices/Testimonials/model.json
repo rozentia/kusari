@@ -20,8 +20,31 @@
             "allowTargetBlank": true,
             "single": "heading2"
           }
+        },
+        "tag_line": {
+          "type": "Text",
+          "config": { "label": "Tag Line", "placeholder": "" }
         }
       },
+      "items": {
+        "testimonial": {
+          "type": "Link",
+          "config": {
+            "label": "Testimonial",
+            "select": "document",
+            "customtypes": ["testimonial"]
+          }
+        }
+      }
+    },
+    {
+      "id": "quoteSlideshow",
+      "name": "Quote Slideshow",
+      "docURL": "...",
+      "version": "initial",
+      "description": "Default",
+      "imageUrl": "",
+      "primary": {},
       "items": {
         "testimonial": {
           "type": "Link",

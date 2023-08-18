@@ -4,17 +4,9 @@
 		"variation": "default",
 		"primary": {
 			"heading": {
-				"__TYPE__": "StructuredTextContent",
-				"value": [
-					{
-						"type": "heading2",
-						"content": {
-							"text": "Robust Features",
-							"spans": []
-						},
-						"direction": "ltr"
-					}
-				]
+				"__TYPE__": "FieldContent",
+				"value": "inside",
+				"type": "Text"
 			}
 		},
 		"items": [
@@ -22,25 +14,11 @@
 				"__TYPE__": "GroupItemContent",
 				"value": [
 					[
-						"icon",
-						{
-							"__TYPE__": "FieldContent",
-							"value": "clover",
-							"type": "Select"
-						}
-					],
-					[
 						"title",
 						{
-							"__TYPE__": "StructuredTextContent",
-							"value": [
-								{
-									"type": "heading3",
-									"content": {
-										"text": "Slept"
-									}
-								}
-							]
+							"__TYPE__": "FieldContent",
+							"value": "strange",
+							"type": "Text"
 						}
 					],
 					[
@@ -56,6 +34,40 @@
 								}
 							]
 						}
+					],
+					[
+						"button_link",
+						{
+							"__TYPE__": "LinkContent",
+							"value": {
+								"__TYPE__": "ExternalLink",
+								"url": "http://twitter.com"
+							}
+						}
+					],
+					[
+						"button_text",
+						{
+							"__TYPE__": "FieldContent",
+							"value": "newspaper",
+							"type": "Text"
+						}
+					],
+					[
+						"icon_package",
+						{
+							"__TYPE__": "FieldContent",
+							"value": "anywhere",
+							"type": "Text"
+						}
+					],
+					[
+						"icon_name",
+						{
+							"__TYPE__": "FieldContent",
+							"value": "will",
+							"type": "Text"
+						}
 					]
 				]
 			},
@@ -63,27 +75,11 @@
 				"__TYPE__": "GroupItemContent",
 				"value": [
 					[
-						"icon",
-						{
-							"__TYPE__": "FieldContent",
-							"type": "Select",
-							"value": "bargraph"
-						}
-					],
-					[
 						"title",
 						{
-							"__TYPE__": "StructuredTextContent",
-							"value": [
-								{
-									"type": "heading3",
-									"content": {
-										"text": "Mood",
-										"spans": []
-									},
-									"direction": "ltr"
-								}
-							]
+							"__TYPE__": "FieldContent",
+							"value": "planet",
+							"type": "Text"
 						}
 					],
 					[
@@ -101,6 +97,40 @@
 								}
 							]
 						}
+					],
+					[
+						"button_link",
+						{
+							"__TYPE__": "LinkContent",
+							"value": {
+								"__TYPE__": "ExternalLink",
+								"url": "https://slicemachine.dev"
+							}
+						}
+					],
+					[
+						"button_text",
+						{
+							"__TYPE__": "FieldContent",
+							"value": "spent",
+							"type": "Text"
+						}
+					],
+					[
+						"icon_package",
+						{
+							"__TYPE__": "FieldContent",
+							"value": "collect",
+							"type": "Text"
+						}
+					],
+					[
+						"icon_name",
+						{
+							"__TYPE__": "FieldContent",
+							"value": "tip",
+							"type": "Text"
+						}
 					]
 				]
 			},
@@ -108,27 +138,11 @@
 				"__TYPE__": "GroupItemContent",
 				"value": [
 					[
-						"icon",
-						{
-							"__TYPE__": "FieldContent",
-							"type": "Select",
-							"value": "hourglass"
-						}
-					],
-					[
 						"title",
 						{
-							"__TYPE__": "StructuredTextContent",
-							"value": [
-								{
-									"type": "heading3",
-									"content": {
-										"text": "Glass",
-										"spans": []
-									},
-									"direction": "ltr"
-								}
-							]
+							"__TYPE__": "FieldContent",
+							"value": "warm",
+							"type": "Text"
 						}
 					],
 					[
@@ -145,6 +159,96 @@
 									"direction": "ltr"
 								}
 							]
+						}
+					],
+					[
+						"button_link",
+						{
+							"__TYPE__": "LinkContent",
+							"value": {
+								"__TYPE__": "ExternalLink",
+								"url": "https://prismic.io"
+							}
+						}
+					],
+					[
+						"button_text",
+						{
+							"__TYPE__": "FieldContent",
+							"value": "breath",
+							"type": "Text"
+						}
+					],
+					[
+						"icon_package",
+						{
+							"__TYPE__": "FieldContent",
+							"value": "written",
+							"type": "Text"
+						}
+					],
+					[
+						"icon_name",
+						{
+							"__TYPE__": "FieldContent",
+							"value": "pressure",
+							"type": "Text"
+						}
+					]
+				]
+			}
+		]
+	},
+	{
+		"__TYPE__": "SharedSliceContent",
+		"variation": "featuresGrid",
+		"primary": {},
+		"items": [
+			{
+				"__TYPE__": "GroupItemContent",
+				"value": [
+					[
+						"title",
+						{
+							"__TYPE__": "StructuredTextContent",
+							"value": [
+								{
+									"type": "heading3",
+									"content": {
+										"text": "Truth"
+									}
+								}
+							]
+						}
+					],
+					[
+						"description",
+						{
+							"__TYPE__": "StructuredTextContent",
+							"value": [
+								{
+									"type": "paragraph",
+									"content": {
+										"text": "Voluptate est culpa laboris mollit. Aliquip incididunt officia eiusmod culpa sint magna laboris cillum ea ea cillum laboris."
+									}
+								}
+							]
+						}
+					],
+					[
+						"icon_package",
+						{
+							"__TYPE__": "FieldContent",
+							"value": "breakfast",
+							"type": "Text"
+						}
+					],
+					[
+						"icon_name",
+						{
+							"__TYPE__": "FieldContent",
+							"value": "experiment",
+							"type": "Text"
 						}
 					]
 				]

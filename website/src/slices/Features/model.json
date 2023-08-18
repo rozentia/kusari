@@ -13,24 +13,55 @@
       "imageUrl": "",
       "primary": {
         "heading": {
-          "type": "StructuredText",
-          "config": {
-            "label": "Heading",
-            "placeholder": "",
-            "allowTargetBlank": true,
-            "single": "heading2"
-          }
+          "type": "Text",
+          "config": { "label": "Heading", "placeholder": "" }
         }
       },
       "items": {
-        "icon": {
-          "type": "Select",
+        "title": {
+          "type": "Text",
+          "config": { "label": "Title", "placeholder": "" }
+        },
+        "description": {
+          "type": "StructuredText",
           "config": {
-            "label": "Icon",
+            "label": "Description",
             "placeholder": "",
-            "options": ["calendar", "bargraph", "clover", "hourglass"]
+            "allowTargetBlank": true,
+            "single": "paragraph,strong,em"
           }
         },
+        "button_link": {
+          "type": "Link",
+          "config": {
+            "label": "Button Link",
+            "placeholder": "",
+            "select": null
+          }
+        },
+        "button_text": {
+          "type": "Text",
+          "config": { "label": "Button Text", "placeholder": "" }
+        },
+        "icon_package": {
+          "type": "Text",
+          "config": { "label": "Icon Package", "placeholder": "" }
+        },
+        "icon_name": {
+          "type": "Text",
+          "config": { "label": "Icon Name", "placeholder": "" }
+        }
+      }
+    },
+    {
+      "id": "featuresGrid",
+      "name": "Features Grid",
+      "docURL": "...",
+      "version": "initial",
+      "description": "Default",
+      "imageUrl": "",
+      "primary": {},
+      "items": {
         "title": {
           "type": "StructuredText",
           "config": {
@@ -48,6 +79,14 @@
             "allowTargetBlank": true,
             "single": "paragraph,strong,em"
           }
+        },
+        "icon_package": {
+          "type": "Text",
+          "config": { "label": "Icon Package", "placeholder": "" }
+        },
+        "icon_name": {
+          "type": "Text",
+          "config": { "label": "Icon Name", "placeholder": "" }
         }
       }
     }

@@ -1,0 +1,87 @@
+{
+  "id": "price",
+  "label": "Price",
+  "format": "custom",
+  "repeatable": true,
+  "status": true,
+  "json": {
+    "Main": {
+      "uid": { "config": { "label": "UID" }, "type": "UID" },
+      "order": {
+        "type": "Number",
+        "config": { "label": "Order", "placeholder": "" }
+      },
+      "title": {
+        "type": "Text",
+        "config": { "label": "Title", "placeholder": "" }
+      },
+      "description": {
+        "type": "StructuredText",
+        "config": {
+          "label": "Description",
+          "placeholder": "",
+          "allowTargetBlank": true,
+          "multi": "paragraph,strong,em,hyperlink"
+        }
+      },
+      "short_description": {
+        "type": "StructuredText",
+        "config": {
+          "label": "Short Description",
+          "placeholder": "",
+          "allowTargetBlank": true,
+          "single": "paragraph,strong,em"
+        }
+      },
+      "month_price_monthly": {
+        "type": "Number",
+        "config": { "label": "Month Price Monthly", "placeholder": "" }
+      },
+      "month_prince_annually": {
+        "type": "Number",
+        "config": { "label": "Month Prince Annually", "placeholder": "" }
+      },
+      "features": {
+        "type": "Group",
+        "config": {
+          "label": "Features",
+          "fields": {
+            "feature_custom_title": {
+              "type": "Text",
+              "config": { "label": "Feature Custom Title", "placeholder": "" }
+            },
+            "feature": {
+              "type": "Link",
+              "config": {
+                "label": "Feature",
+                "select": "document",
+                "customtypes": ["feature"]
+              }
+            },
+            "particularity": {
+              "type": "Select",
+              "config": {
+                "label": "Particularity",
+                "placeholder": "",
+                "options": ["none", "Email", "1-1 Support"],
+                "default_value": "none"
+              }
+            },
+            "custom_particularity": {
+              "type": "Text",
+              "config": { "label": "Custom Particularity", "placeholder": "" }
+            }
+          }
+        }
+      },
+      "link_to_get": {
+        "type": "Link",
+        "config": { "label": "Link to Get", "placeholder": "", "select": null }
+      },
+      "text_to_get": {
+        "type": "Text",
+        "config": { "label": "Text to Get", "placeholder": "" }
+      }
+    }
+  }
+}

@@ -30,6 +30,73 @@
             "label": {
               "type": "Text",
               "config": { "label": "Label", "placeholder": "" }
+            },
+            "mobileonly": {
+              "type": "Boolean",
+              "config": {
+                "label": "MobileOnly",
+                "default_value": false,
+                "placeholder_true": "true",
+                "placeholder_false": "false"
+              }
+            }
+          }
+        }
+      },
+      "footer_navigation": {
+        "type": "Group",
+        "config": {
+          "label": "Footer Navigation",
+          "fields": {
+            "link": {
+              "type": "Link",
+              "config": { "label": "Link", "placeholder": "", "select": null }
+            },
+            "label": {
+              "type": "Text",
+              "config": { "label": "Label", "placeholder": "" }
+            },
+            "group": {
+              "type": "Select",
+              "config": {
+                "label": "Group",
+                "placeholder": "",
+                "options": ["1", "2"]
+              }
+            }
+          }
+        }
+      },
+      "social_accounts": {
+        "type": "Group",
+        "config": {
+          "label": "Social Accounts",
+          "fields": {
+            "network": {
+              "type": "Select",
+              "config": {
+                "label": "Network",
+                "placeholder": "",
+                "options": [
+                  "Instagram",
+                  "Facebook",
+                  "Twitter",
+                  "Discord",
+                  "Telegram",
+                  "TikTok",
+                  "LinkedIn",
+                  "YouTube",
+                  "Google"
+                ]
+              }
+            },
+            "link": {
+              "type": "Link",
+              "config": { "label": "Link", "placeholder": "", "select": null }
+            },
+            "custom_label": {
+              "type": "Text",
+              "config": { "label": "Custom Label", "placeholder": "" }
             }
           }
         }

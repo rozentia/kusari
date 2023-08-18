@@ -1,0 +1,57 @@
+{
+  "id": "features_carousel",
+  "type": "SharedSlice",
+  "name": "FeaturesCarousel",
+  "description": "FeaturesCarousel",
+  "variations": [
+    {
+      "id": "default",
+      "name": "Default",
+      "docURL": "...",
+      "version": "initial",
+      "description": "Default",
+      "imageUrl": "",
+      "primary": {},
+      "items": {
+        "title": {
+          "type": "Text",
+          "config": { "label": "Title", "placeholder": "" }
+        },
+        "text": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Text",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "multi": "paragraph,strong,em,hyperlink"
+          }
+        },
+        "button_link": {
+          "type": "Link",
+          "config": {
+            "label": "Button Link",
+            "placeholder": "",
+            "allowTargetBlank": false,
+            "select": null
+          }
+        },
+        "button_label": {
+          "type": "Text",
+          "config": { "label": "Button Label", "placeholder": "" }
+        },
+        "image": {
+          "type": "Image",
+          "config": { "label": "Image", "constraint": {}, "thumbnails": [] }
+        },
+        "icon_name": {
+          "type": "Text",
+          "config": { "label": "Icon Name", "placeholder": "" }
+        },
+        "notification_text": {
+          "type": "Text",
+          "config": { "label": "Notification Text", "placeholder": "" }
+        }
+      }
+    }
+  ]
+}
