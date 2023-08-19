@@ -807,6 +807,28 @@ interface SettingsDocumentData {
   site_title: prismic.KeyTextField;
 
   /**
+   * Site Name field in *Settings*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: settings.site_name
+   * - **Tab**: Main
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  site_name: prismic.KeyTextField;
+
+  /**
+   * Site Author field in *Settings*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: settings.site_author
+   * - **Tab**: Main
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  site_author: prismic.KeyTextField;
+
+  /**
    * Meta Description field in *Settings*
    *
    * - **Field Type**: Text
@@ -827,6 +849,17 @@ interface SettingsDocumentData {
    * - **Documentation**: https://prismic.io/docs/field#image
    */
   og_image: prismic.ImageField<never>;
+
+  /**
+   * X Card field in *Settings*
+   *
+   * - **Field Type**: Image
+   * - **Placeholder**: *None*
+   * - **API ID Path**: settings.x_card
+   * - **Tab**: Main
+   * - **Documentation**: https://prismic.io/docs/field#image
+   */
+  x_card: prismic.ImageField<never>;
 
   /**
    * Navigation field in *Settings*
@@ -965,12 +998,12 @@ export interface BenefitsSliceDefaultPrimary {
   /**
    * Heading field in *Benefits → Primary*
    *
-   * - **Field Type**: Title
+   * - **Field Type**: Text
    * - **Placeholder**: *None*
    * - **API ID Path**: benefits.primary.heading
-   * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+   * - **Documentation**: https://prismic.io/docs/field#key-text
    */
-  heading: prismic.TitleField;
+  heading: prismic.KeyTextField;
 }
 
 /**
@@ -1017,6 +1050,26 @@ export interface BenefitsSliceDefaultItem {
    * - **Documentation**: https://prismic.io/docs/field#boolean
    */
   islight: prismic.BooleanField;
+
+  /**
+   * Icon Package field in *Benefits → Items*
+   *
+   * - **Field Type**: Select
+   * - **Placeholder**: *None*
+   * - **Default Value**: fontAwesome
+   * - **API ID Path**: benefits.items[].icon_package
+   * - **Documentation**: https://prismic.io/docs/field#select
+   */
+  icon_package: prismic.SelectField<
+    | "fontAwesome"
+    | "ion"
+    | "feather"
+    | "lineAwesome"
+    | "antDesign"
+    | "circum"
+    | "remix",
+    "filled"
+  >;
 
   /**
    * Icon Name field in *Benefits → Items*

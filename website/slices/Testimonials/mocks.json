@@ -1,0 +1,63 @@
+[
+	{
+		"__TYPE__": "SharedSliceContent",
+		"variation": "default",
+		"primary": {
+			"heading": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "heading2",
+						"content": {
+							"text": "Nothing"
+						}
+					}
+				]
+			},
+			"tag_line": {
+				"__TYPE__": "FieldContent",
+				"value": "somehow",
+				"type": "Text"
+			}
+		},
+		"items": [
+			{
+				"__TYPE__": "GroupItemContent",
+				"value": [
+					[
+						"testimonial",
+						{
+							"__TYPE__": "LinkContent",
+							"value": {
+								"__TYPE__": "DocumentLink",
+								"id": "mock_document_id"
+							}
+						}
+					]
+				]
+			}
+		]
+	},
+	{
+		"__TYPE__": "SharedSliceContent",
+		"variation": "quoteSlideshow",
+		"primary": {},
+		"items": [
+			{
+				"__TYPE__": "GroupItemContent",
+				"value": [
+					[
+						"testimonial",
+						{
+							"__TYPE__": "LinkContent",
+							"value": {
+								"__TYPE__": "DocumentLink",
+								"id": "mock_document_id"
+							}
+						}
+					]
+				]
+			}
+		]
+	}
+]
