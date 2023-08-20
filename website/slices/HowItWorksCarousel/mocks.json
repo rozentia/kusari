@@ -11,16 +11,16 @@
 						"title",
 						{
 							"__TYPE__": "FieldContent",
-							"value": "railroad",
-							"type": "Text"
+							"type": "Text",
+							"value": "Sign up"
 						}
 					],
 					[
 						"short_text",
 						{
 							"__TYPE__": "FieldContent",
-							"value": "yourself",
-							"type": "Text"
+							"type": "Text",
+							"value": "How it works .01"
 						}
 					],
 					[
@@ -31,8 +31,16 @@
 								{
 									"type": "paragraph",
 									"content": {
-										"text": "Id duis elit sint exercitation cupidatat exercitation quis est cillum exercitation pariatur labore ipsum. Occaecat nostrud pariatur eu quis ex ea aute. Do sunt exercitation occaecat do."
-									}
+										"text": "Create an account with Brainwave - AI chat app by providing your name, email address, and password. Once you sign up, you can start exploring the app.",
+										"spans": [
+											{
+												"type": "strong",
+												"start": 23,
+												"end": 32
+											}
+										]
+									},
+									"direction": "ltr"
 								}
 							]
 						}
@@ -51,30 +59,223 @@
 						"button_label",
 						{
 							"__TYPE__": "FieldContent",
-							"value": "floating",
-							"type": "Text"
+							"type": "Text",
+							"value": "Sign Up"
+						}
+					],
+					[
+						"image",
+						{
+							"origin": {
+								"id": "Bd7gNnWJBkU",
+								"url": "https://images.unsplash.com/photo-1525547719571-a2d4ac8945e2?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHw0fHxjb21wdXRlcnxlbnwwfHx8fDE2OTI1NTU2OTV8MA&ixlib=rb-4.0.3&q=85",
+								"width": 3648,
+								"height": 4560
+							},
+							"url": "https://images.unsplash.com/photo-1525547719571-a2d4ac8945e2?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHw0fHxjb21wdXRlcnxlbnwwfHx8fDE2OTI1NTU2OTV8MA&ixlib=rb-4.0.3&q=85",
+							"width": 3648,
+							"height": 4560,
+							"edit": {
+								"background": "transparent",
+								"zoom": 1,
+								"crop": {
+									"x": 0,
+									"y": 0
+								}
+							},
+							"credits": null,
+							"alt": null,
+							"__TYPE__": "ImageContent",
+							"thumbnails": {}
+						}
+					]
+				]
+			},
+			{
+				"__TYPE__": "GroupItemContent",
+				"value": [
+					[
+						"image",
+						{
+							"__TYPE__": "ImageContent",
+							"url": "https://images.unsplash.com/photo-1547394765-185e1e68f34e?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwxM3x8Y29tcHV0ZXJ8ZW58MHx8fHwxNjkyNTU1Njk1fDA&ixlib=rb-4.0.3&q=85",
+							"origin": {
+								"id": "WkfDrhxDMC8",
+								"url": "https://images.unsplash.com/photo-1547394765-185e1e68f34e?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwxM3x8Y29tcHV0ZXJ8ZW58MHx8fHwxNjkyNTU1Njk1fDA&ixlib=rb-4.0.3&q=85",
+								"width": 6000,
+								"height": 4000
+							},
+							"width": 6000,
+							"height": 4000,
+							"edit": {
+								"background": "transparent",
+								"zoom": 1,
+								"crop": {
+									"x": 0,
+									"y": 0
+								}
+							},
+							"thumbnails": {}
+						}
+					],
+					[
+						"title",
+						{
+							"__TYPE__": "FieldContent",
+							"type": "Text",
+							"value": "Connect with AI chatbot"
+						}
+					],
+					[
+						"short_text",
+						{
+							"__TYPE__": "FieldContent",
+							"type": "Text",
+							"value": "how it works .02"
+						}
+					],
+					[
+						"long_text",
+						{
+							"__TYPE__": "StructuredTextContent",
+							"value": [
+								{
+									"type": "paragraph",
+									"content": {
+										"text": "Connect with the AI chatbot to start the conversation. The chatbot uses natural language processing to understand your queries and provide relevant responses.",
+										"spans": []
+									},
+									"direction": "ltr"
+								}
+							]
+						}
+					],
+					[
+						"button_label",
+						{
+							"__TYPE__": "FieldContent",
+							"type": "Text",
+							"value": "Connect"
+						}
+					]
+				]
+			},
+			{
+				"__TYPE__": "GroupItemContent",
+				"value": [
+					[
+						"long_text",
+						{
+							"__TYPE__": "StructuredTextContent",
+							"value": [
+								{
+									"type": "paragraph",
+									"content": {
+										"text": "Based on the conversation with the AI chatbot, you will receive personalized recommendations related to your queries. The chatbot is trained to understand your preferences and provide customized suggestions.",
+										"spans": []
+									},
+									"direction": "ltr"
+								}
+							]
+						}
+					],
+					[
+						"short_text",
+						{
+							"__TYPE__": "FieldContent",
+							"type": "Text",
+							"value": "how it works .03"
+						}
+					],
+					[
+						"title",
+						{
+							"__TYPE__": "FieldContent",
+							"type": "Text",
+							"value": "Get Personalized Advices"
 						}
 					],
 					[
 						"image",
 						{
 							"__TYPE__": "ImageContent",
+							"url": "https://images.unsplash.com/photo-1537498425277-c283d32ef9db?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHw3fHxjb21wdXRlcnxlbnwwfHx8fDE2OTI1NTU2OTV8MA&ixlib=rb-4.0.3&q=85",
 							"origin": {
-								"id": "main",
-								"url": "https://images.unsplash.com/photo-1551739440-5dd934d3a94a",
-								"width": 3456,
-								"height": 4320
+								"id": "WiONHd_zYI4",
+								"url": "https://images.unsplash.com/photo-1537498425277-c283d32ef9db?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHw3fHxjb21wdXRlcnxlbnwwfHx8fDE2OTI1NTU2OTV8MA&ixlib=rb-4.0.3&q=85",
+								"width": 4380,
+								"height": 2895
 							},
-							"url": "https://images.unsplash.com/photo-1551739440-5dd934d3a94a",
-							"width": 3456,
-							"height": 4320,
+							"width": 4380,
+							"height": 2895,
 							"edit": {
+								"background": "transparent",
 								"zoom": 1,
 								"crop": {
 									"x": 0,
 									"y": 0
-								},
-								"background": "transparent"
+								}
+							},
+							"thumbnails": {}
+						}
+					]
+				]
+			},
+			{
+				"__TYPE__": "GroupItemContent",
+				"value": [
+					[
+						"title",
+						{
+							"__TYPE__": "FieldContent",
+							"type": "Text",
+							"value": "Explore and Engage"
+						}
+					],
+					[
+						"long_text",
+						{
+							"__TYPE__": "StructuredTextContent",
+							"value": [
+								{
+									"type": "paragraph",
+									"content": {
+										"text": "Explore the recommendations provided by the AI chatbot and engage with the app. You can ask questions, provide feedback, and share your experience with the chatbot.",
+										"spans": []
+									},
+									"direction": "ltr"
+								}
+							]
+						}
+					],
+					[
+						"short_text",
+						{
+							"__TYPE__": "FieldContent",
+							"type": "Text",
+							"value": "How it works .04"
+						}
+					],
+					[
+						"image",
+						{
+							"__TYPE__": "ImageContent",
+							"url": "https://images.unsplash.com/photo-1603302576837-37561b2e2302?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwyNnx8Y29kZSUyMHxlbnwwfHx8fDE2OTI1NzU3MzV8MA&ixlib=rb-4.0.3&q=85",
+							"origin": {
+								"id": "lzh3hPtJz9c",
+								"url": "https://images.unsplash.com/photo-1603302576837-37561b2e2302?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwyNnx8Y29kZSUyMHxlbnwwfHx8fDE2OTI1NzU3MzV8MA&ixlib=rb-4.0.3&q=85",
+								"width": 5864,
+								"height": 3922
+							},
+							"width": 5864,
+							"height": 3922,
+							"edit": {
+								"background": "transparent",
+								"zoom": 1,
+								"crop": {
+									"x": 0,
+									"y": 0
+								}
 							},
 							"thumbnails": {}
 						}
