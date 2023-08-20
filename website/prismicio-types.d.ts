@@ -1711,6 +1711,26 @@ export interface FeaturesCarouselSliceDefaultItem {
   image: prismic.ImageField<never>;
 
   /**
+   * Icon Package field in *FeaturesCarousel → Items*
+   *
+   * - **Field Type**: Select
+   * - **Placeholder**: *None*
+   * - **Default Value**: fontAwesome
+   * - **API ID Path**: features_carousel.items[].icon_package
+   * - **Documentation**: https://prismic.io/docs/field#select
+   */
+  icon_package: prismic.SelectField<
+    | "fontAwesome"
+    | "ion"
+    | "feather"
+    | "lineAwesome"
+    | "antDesign"
+    | "circum"
+    | "remix",
+    "filled"
+  >;
+
+  /**
    * Icon Name field in *FeaturesCarousel → Items*
    *
    * - **Field Type**: Text

@@ -11,8 +11,8 @@
 						"title",
 						{
 							"__TYPE__": "FieldContent",
-							"value": "dropped",
-							"type": "Text"
+							"type": "Text",
+							"value": "Unlock the power of AI"
 						}
 					],
 					[
@@ -23,8 +23,10 @@
 								{
 									"type": "paragraph",
 									"content": {
-										"text": "Proident ea in anim anim eu velit laboris eu sint esse officia proident velit occaecat duis. Sint qui ex proident enim reprehenderit sit anim ea aute non."
-									}
+										"text": "Brainwave unlocks the potential of AI-powered applications",
+										"spans": []
+									},
+									"direction": "ltr"
 								}
 							]
 						}
@@ -43,14 +45,13 @@
 						"button_label",
 						{
 							"__TYPE__": "FieldContent",
-							"value": "freedom",
-							"type": "Text"
+							"type": "Text",
+							"value": "Try it now"
 						}
 					],
 					[
 						"image",
 						{
-							"__TYPE__": "ImageContent",
 							"origin": {
 								"id": "main",
 								"url": "https://images.unsplash.com/photo-1537498425277-c283d32ef9db",
@@ -68,6 +69,9 @@
 								},
 								"background": "transparent"
 							},
+							"credits": null,
+							"alt": null,
+							"__TYPE__": "ImageContent",
 							"thumbnails": {}
 						}
 					],
@@ -75,16 +79,188 @@
 						"icon_name",
 						{
 							"__TYPE__": "FieldContent",
-							"value": "ride",
-							"type": "Text"
+							"type": "Text",
+							"value": "IoApertureSharp"
 						}
 					],
 					[
 						"notification_text",
 						{
 							"__TYPE__": "FieldContent",
-							"value": "speech",
-							"type": "Text"
+							"type": "Text",
+							"value": "Code generation"
+						}
+					],
+					[
+						"icon_package",
+						{
+							"__TYPE__": "FieldContent",
+							"type": "Select",
+							"value": "ion"
+						}
+					]
+				]
+			},
+			{
+				"__TYPE__": "GroupItemContent",
+				"value": [
+					[
+						"title",
+						{
+							"__TYPE__": "FieldContent",
+							"type": "Text",
+							"value": "Transform your conversations with AI"
+						}
+					],
+					[
+						"text",
+						{
+							"__TYPE__": "StructuredTextContent",
+							"value": [
+								{
+									"type": "paragraph",
+									"content": {
+										"text": "Brainwave unlocks the potential of AI-powered applications",
+										"spans": []
+									},
+									"direction": "ltr"
+								}
+							]
+						}
+					],
+					[
+						"notification_text",
+						{
+							"__TYPE__": "FieldContent",
+							"type": "Text",
+							"value": "Education feedback"
+						}
+					],
+					[
+						"icon_package",
+						{
+							"__TYPE__": "FieldContent",
+							"type": "Select",
+							"value": "ion"
+						}
+					],
+					[
+						"icon_name",
+						{
+							"__TYPE__": "FieldContent",
+							"type": "Text",
+							"value": "IoAtCircleOutline"
+						}
+					],
+					[
+						"image",
+						{
+							"__TYPE__": "ImageContent",
+							"url": "https://images.unsplash.com/photo-1525547719571-a2d4ac8945e2?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHw0fHxjb21wdXRlcnxlbnwwfHx8fDE2OTI1NTU2OTV8MA&ixlib=rb-4.0.3&q=85",
+							"origin": {
+								"id": "Bd7gNnWJBkU",
+								"url": "https://images.unsplash.com/photo-1525547719571-a2d4ac8945e2?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHw0fHxjb21wdXRlcnxlbnwwfHx8fDE2OTI1NTU2OTV8MA&ixlib=rb-4.0.3&q=85",
+								"width": 3648,
+								"height": 4560
+							},
+							"width": 3648,
+							"height": 4560,
+							"edit": {
+								"background": "transparent",
+								"zoom": 1,
+								"crop": {
+									"x": 0,
+									"y": 0
+								}
+							},
+							"thumbnails": {}
+						}
+					]
+				]
+			},
+			{
+				"__TYPE__": "GroupItemContent",
+				"value": [
+					[
+						"title",
+						{
+							"__TYPE__": "FieldContent",
+							"type": "Text",
+							"value": "Discover the benefits of AI chat"
+						}
+					],
+					[
+						"text",
+						{
+							"__TYPE__": "StructuredTextContent",
+							"value": [
+								{
+									"type": "paragraph",
+									"content": {
+										"text": "Brainwave unlocks the potential of AI-powered applications",
+										"spans": []
+									},
+									"direction": "ltr"
+								}
+							]
+						}
+					],
+					[
+						"button_link",
+						{
+							"__TYPE__": "LinkContent",
+							"value": {
+								"__TYPE__": "ExternalLink",
+								"url": "https://kusari.io"
+							}
+						}
+					],
+					[
+						"button_label",
+						{
+							"__TYPE__": "FieldContent",
+							"type": "Text",
+							"value": "Check it out"
+						}
+					],
+					[
+						"image",
+						{
+							"__TYPE__": "ImageContent",
+							"url": "https://images.unsplash.com/photo-1560762484-813fc97650a0?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwyMHx8Y29tcHV0ZXJ8ZW58MHx8fHwxNjkyNTU1Njk1fDA&ixlib=rb-4.0.3&q=85",
+							"origin": {
+								"id": "iGLLtLINSkw",
+								"url": "https://images.unsplash.com/photo-1560762484-813fc97650a0?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwyMHx8Y29tcHV0ZXJ8ZW58MHx8fHwxNjkyNTU1Njk1fDA&ixlib=rb-4.0.3&q=85",
+								"width": 3344,
+								"height": 2509
+							},
+							"width": 3344,
+							"height": 2509,
+							"edit": {
+								"background": "transparent",
+								"zoom": 1,
+								"crop": {
+									"x": 0,
+									"y": 0
+								}
+							},
+							"thumbnails": {}
+						}
+					],
+					[
+						"icon_package",
+						{
+							"__TYPE__": "FieldContent",
+							"type": "Select",
+							"value": "ion"
+						}
+					],
+					[
+						"icon_name",
+						{
+							"__TYPE__": "FieldContent",
+							"type": "Text",
+							"value": "IoColorPaletteOutline"
 						}
 					]
 				]

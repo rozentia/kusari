@@ -43,6 +43,23 @@
           "type": "Image",
           "config": { "label": "Image", "constraint": {}, "thumbnails": [] }
         },
+        "icon_package": {
+          "type": "Select",
+          "config": {
+            "label": "Icon Package",
+            "placeholder": "",
+            "options": [
+              "fontAwesome",
+              "ion",
+              "feather",
+              "lineAwesome",
+              "antDesign",
+              "circum",
+              "remix"
+            ],
+            "default_value": "fontAwesome"
+          }
+        },
         "icon_name": {
           "type": "Text",
           "config": { "label": "Icon Name", "placeholder": "" }
