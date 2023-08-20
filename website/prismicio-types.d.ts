@@ -915,6 +915,83 @@ export type SettingsDocument<Lang extends string = string> =
     Lang
   >;
 
+type SliceTestDocumentDataSlicesSlice = CommunityTestimonialsSlice;
+
+/**
+ * Content for Slice Test documents
+ */
+interface SliceTestDocumentData {
+  /**
+   * Heading field in *Slice Test*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: slice_test.heading
+   * - **Tab**: Main
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  heading: prismic.KeyTextField;
+
+  /**
+   * Slice Zone field in *Slice Test*
+   *
+   * - **Field Type**: Slice Zone
+   * - **Placeholder**: *None*
+   * - **API ID Path**: slice_test.slices[]
+   * - **Tab**: Main
+   * - **Documentation**: https://prismic.io/docs/field#slices
+   */
+  slices: prismic.SliceZone<SliceTestDocumentDataSlicesSlice>
+  /**
+   * Meta Description field in *Slice Test*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: A brief summary of the page
+   * - **API ID Path**: slice_test.meta_description
+   * - **Tab**: SEO & Metadata
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */;
+  meta_description: prismic.KeyTextField;
+
+  /**
+   * Meta Image field in *Slice Test*
+   *
+   * - **Field Type**: Image
+   * - **Placeholder**: *None*
+   * - **API ID Path**: slice_test.meta_image
+   * - **Tab**: SEO & Metadata
+   * - **Documentation**: https://prismic.io/docs/field#image
+   */
+  meta_image: prismic.ImageField<never>;
+
+  /**
+   * Meta Title field in *Slice Test*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: A title of the page used for social media and search engines
+   * - **API ID Path**: slice_test.meta_title
+   * - **Tab**: SEO & Metadata
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  meta_title: prismic.KeyTextField;
+}
+
+/**
+ * Slice Test document from Prismic
+ *
+ * - **API ID**: `slice_test`
+ * - **Repeatable**: `false`
+ * - **Documentation**: https://prismic.io/docs/custom-types
+ *
+ * @typeParam Lang - Language API ID of the document.
+ */
+export type SliceTestDocument<Lang extends string = string> =
+  prismic.PrismicDocumentWithoutUID<
+    Simplify<SliceTestDocumentData>,
+    "slice_test",
+    Lang
+  >;
+
 /**
  * Content for Testimonial documents
  */
@@ -989,6 +1066,7 @@ export type AllDocumentTypes =
   | PageDocument
   | PriceDocument
   | SettingsDocument
+  | SliceTestDocument
   | TestimonialDocument;
 
 /**
@@ -2976,6 +3054,9 @@ declare module "@prismicio/client" {
       PriceDocumentData,
       SettingsDocument,
       SettingsDocumentData,
+      SliceTestDocument,
+      SliceTestDocumentData,
+      SliceTestDocumentDataSlicesSlice,
       TestimonialDocument,
       TestimonialDocumentData,
       AllDocumentTypes,
