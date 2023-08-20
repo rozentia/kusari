@@ -5,8 +5,8 @@
 		"primary": {
 			"heading": {
 				"__TYPE__": "FieldContent",
-				"value": "bright",
-				"type": "Text"
+				"type": "Text",
+				"value": "Frequently asked questions"
 			},
 			"text": {
 				"__TYPE__": "StructuredTextContent",
@@ -14,8 +14,10 @@
 					{
 						"type": "paragraph",
 						"content": {
-							"text": "Anim irure veniam quis anim Lorem exercitation aliqua quis. Minim velit cillum sunt dolor fugiat eu cupidatat. Dolore veniam qui ex qui officia proident culpa minim deserunt pariatur aute."
-						}
+							"text": "Haven’t found what you’re looking for? Contact us",
+							"spans": []
+						},
+						"direction": "ltr"
 					}
 				]
 			}
@@ -32,8 +34,10 @@
 								{
 									"type": "paragraph",
 									"content": {
-										"text": "Eu occaecat minim proident veniam laborum."
-									}
+										"text": "What is Brainwave - AI chat app?",
+										"spans": []
+									},
+									"direction": "ltr"
 								}
 							]
 						}
@@ -46,8 +50,178 @@
 								{
 									"type": "paragraph",
 									"content": {
-										"text": "Ut reprehenderit tempor qui officia in occaecat commodo minim id in nostrud eiusmod. Magna id esse laborum duis sint pariatur reprehenderit sunt est eu reprehenderit id exercitation Lorem."
-									}
+										"text": "Brainwave - AI chat app is a chatbot-powered app that provides personalized recommendations to users based on their preferences. The app uses natural language processing to understand user queries and provide accurate and relevant responses. With Brainwave, users can get customized suggestions for everything from meal planning to exercise routines, making it easier to achieve their goals and live a healthier lifestyle.",
+										"spans": [
+											{
+												"type": "strong",
+												"start": 247,
+												"end": 256
+											}
+										]
+									},
+									"direction": "ltr"
+								},
+								{
+									"type": "paragraph",
+									"content": {
+										"text": " The app uses natural language processing to understand user queries and provide accurate and relevant responses.",
+										"spans": [
+											{
+												"type": "em",
+												"start": 14,
+												"end": 41
+											}
+										]
+									},
+									"direction": "ltr"
+								}
+							]
+						}
+					]
+				]
+			},
+			{
+				"__TYPE__": "GroupItemContent",
+				"value": [
+					[
+						"answer",
+						{
+							"__TYPE__": "StructuredTextContent",
+							"value": [
+								{
+									"type": "paragraph",
+									"content": {
+										"text": "Brainwave - AI chat app is a chatbot-powered app that provides personalized recommendations to users based on their preferences. The app uses natural language processing to understand user queries and provide accurate and relevant responses. With Brainwave, users can get customized suggestions for everything from meal planning to exercise routines, making it easier to achieve their goals and live a healthier lifestyle.",
+										"spans": []
+									},
+									"direction": "ltr"
+								}
+							]
+						}
+					],
+					[
+						"question",
+						{
+							"__TYPE__": "StructuredTextContent",
+							"value": [
+								{
+									"type": "paragraph",
+									"content": {
+										"text": "How does Brainwave - AI chat app work?",
+										"spans": []
+									},
+									"direction": "ltr"
+								}
+							]
+						}
+					]
+				]
+			},
+			{
+				"__TYPE__": "GroupItemContent",
+				"value": [
+					[
+						"question",
+						{
+							"__TYPE__": "StructuredTextContent",
+							"value": [
+								{
+									"type": "paragraph",
+									"content": {
+										"text": "What are the core features of Brainwave?",
+										"spans": []
+									},
+									"direction": "ltr"
+								}
+							]
+						}
+					],
+					[
+						"answer",
+						{
+							"__TYPE__": "StructuredTextContent",
+							"value": [
+								{
+									"type": "paragraph",
+									"content": {
+										"text": "Brainwave - AI chat app is a chatbot-powered app that provides personalized recommendations to users based on their preferences. The app uses natural language processing to understand user queries and provide accurate and relevant responses. With Brainwave, users can get customized suggestions for everything from meal planning to exercise routines, making it easier to achieve their goals and live a healthier lifestyle.",
+										"spans": []
+									},
+									"direction": "ltr"
+								}
+							]
+						}
+					]
+				]
+			},
+			{
+				"__TYPE__": "GroupItemContent",
+				"value": [
+					[
+						"question",
+						{
+							"__TYPE__": "StructuredTextContent",
+							"value": [
+								{
+									"type": "paragraph",
+									"content": {
+										"text": "How much does Brainwave cost?",
+										"spans": []
+									},
+									"direction": "ltr"
+								}
+							]
+						}
+					],
+					[
+						"answer",
+						{
+							"__TYPE__": "StructuredTextContent",
+							"value": [
+								{
+									"type": "paragraph",
+									"content": {
+										"text": "Brainwave - AI chat app is a chatbot-powered app that provides personalized recommendations to users based on their preferences. The app uses natural language processing to understand user queries and provide accurate and relevant responses. With Brainwave, users can get customized suggestions for everything from meal planning to exercise routines, making it easier to achieve their goals and live a healthier lifestyle.",
+										"spans": []
+									},
+									"direction": "ltr"
+								}
+							]
+						}
+					]
+				]
+			},
+			{
+				"__TYPE__": "GroupItemContent",
+				"value": [
+					[
+						"question",
+						{
+							"__TYPE__": "StructuredTextContent",
+							"value": [
+								{
+									"type": "paragraph",
+									"content": {
+										"text": "How can I get started with Brainwave?",
+										"spans": []
+									},
+									"direction": "ltr"
+								}
+							]
+						}
+					],
+					[
+						"answer",
+						{
+							"__TYPE__": "StructuredTextContent",
+							"value": [
+								{
+									"type": "paragraph",
+									"content": {
+										"text": "Brainwave - AI chat app is a chatbot-powered app that provides personalized recommendations to users based on their preferences. The app uses natural language processing to understand user queries and provide accurate and relevant responses. With Brainwave, users can get customized suggestions for everything from meal planning to exercise routines, making it easier to achieve their goals and live a healthier lifestyle.",
+										"spans": []
+									},
+									"direction": "ltr"
 								}
 							]
 						}
