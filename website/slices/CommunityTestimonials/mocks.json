@@ -5,13 +5,13 @@
 		"primary": {
 			"title": {
 				"__TYPE__": "FieldContent",
-				"value": "anyway",
-				"type": "Text"
+				"type": "Text",
+				"value": "What the community is saying"
 			},
 			"tag": {
 				"__TYPE__": "FieldContent",
-				"value": "locate",
-				"type": "Text"
+				"type": "Text",
+				"value": "ready to get started"
 			}
 		},
 		"items": [
