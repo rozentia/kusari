@@ -5,8 +5,8 @@
 		"primary": {
 			"heading": {
 				"__TYPE__": "FieldContent",
-				"value": "lonely",
-				"type": "Text"
+				"type": "Text",
+				"value": "AI chat app for seamless collaboration"
 			},
 			"text": {
 				"__TYPE__": "StructuredTextContent",
@@ -14,8 +14,10 @@
 					{
 						"type": "paragraph",
 						"content": {
-							"text": "Irure Lorem ullamco dolor labore mollit eu sint do et dolore deserunt aliquip id adipisicing."
-						}
+							"text": "With smart automation and top-notch security, it's the perfect solution for teams looking to work smarter.",
+							"spans": []
+						},
+						"direction": "ltr"
 					}
 				]
 			},
@@ -28,8 +30,8 @@
 			},
 			"button_label": {
 				"__TYPE__": "FieldContent",
-				"value": "outside",
-				"type": "Text"
+				"type": "Text",
+				"value": "try it now"
 			}
 		},
 		"items": [
@@ -40,8 +42,8 @@
 						"title",
 						{
 							"__TYPE__": "FieldContent",
-							"value": "town",
-							"type": "Text"
+							"type": "Text",
+							"value": "Seamless Integration"
 						}
 					],
 					[
@@ -52,10 +54,38 @@
 								{
 									"type": "paragraph",
 									"content": {
-										"text": "Lorem laborum ullamco ipsum dolor. Occaecat enim ea aliquip. Laboris non ullamco fugiat."
-									}
+										"text": "With smart automation and top-notch security, it's the perfect solution for teams looking to work smarter.",
+										"spans": []
+									},
+									"direction": "ltr"
 								}
 							]
+						}
+					]
+				]
+			},
+			{
+				"__TYPE__": "GroupItemContent",
+				"value": [
+					[
+						"title",
+						{
+							"__TYPE__": "FieldContent",
+							"type": "Text",
+							"value": "Smart Automation"
+						}
+					]
+				]
+			},
+			{
+				"__TYPE__": "GroupItemContent",
+				"value": [
+					[
+						"title",
+						{
+							"__TYPE__": "FieldContent",
+							"type": "Text",
+							"value": "Top-notch Security"
 						}
 					]
 				]
