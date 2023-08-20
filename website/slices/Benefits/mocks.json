@@ -48,8 +48,8 @@
 						"icon_name",
 						{
 							"__TYPE__": "FieldContent",
-							"value": "important",
-							"type": "Text"
+							"type": "Text",
+							"value": "FaBolt"
 						}
 					],
 					[
@@ -98,6 +98,14 @@
 								}
 							]
 						}
+					],
+					[
+						"icon_name",
+						{
+							"__TYPE__": "FieldContent",
+							"type": "Text",
+							"value": "FaBone"
+						}
 					]
 				]
 			},
@@ -127,6 +135,22 @@
 								}
 							]
 						}
+					],
+					[
+						"icon_name",
+						{
+							"__TYPE__": "FieldContent",
+							"type": "Text",
+							"value": "FiCodesandbox"
+						}
+					],
+					[
+						"icon_package",
+						{
+							"__TYPE__": "FieldContent",
+							"type": "Select",
+							"value": "feather"
+						}
 					]
 				]
 			},
@@ -155,6 +179,14 @@
 									"direction": "ltr"
 								}
 							]
+						}
+					],
+					[
+						"icon_name",
+						{
+							"__TYPE__": "FieldContent",
+							"type": "Text",
+							"value": "FaBone"
 						}
 					]
 				]
