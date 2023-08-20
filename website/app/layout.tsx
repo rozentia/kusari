@@ -5,27 +5,8 @@ import { Sora, Source_Code_Pro, Space_Grotesk } from "next/font/google";
 import { createClient } from "@/prismicio";
 import { Metadata } from "next";
 import { content } from '@/mocks/collaboration';
-
-const sora = Sora({
-    weight: ["300", "400", "600"],
-    subsets: ["latin"],
-    display: "block",
-    variable: "--font-sora",
-});
-
-const code = Source_Code_Pro({
-    weight: ["400", "600", "700"],
-    subsets: ["latin"],
-    display: "block",
-    variable: "--font-code",
-});
-
-const grotesk = Space_Grotesk({
-    weight: ["300"],
-    subsets: ["latin"],
-    display: "block",
-    variable: "--font-grotesk",
-});
+import { code, grotesk, sora } from "@/common/style/fonts";
+import { kBodyStyle } from "@/constants/classNames";
 
 //: https://nextjs.org/docs/app/api-reference/functions/generate-metadata
 export async function generateMetadata(): Promise<Metadata> {
@@ -72,7 +53,7 @@ export default function RootLayout({
                 <meta name="theme-color" content="#ffffff" />
             </head>
             <body
-                className={`${sora.variable} ${code.variable} ${grotesk.variable} font-sans bg-n-8 text-n-1 text-base`}
+                className={`${sora.variable} ${code.variable} ${grotesk.variable} ${kBodyStyle}`}
             >
                 {children}
                 <svg className="block" width={0} height={0}>

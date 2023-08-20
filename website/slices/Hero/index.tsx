@@ -1,18 +1,15 @@
-import Bounded from "@/components/BoundedOld";
-import Button from "@/components/Button";
-import Heading from "@/components/Heading";
 import { Content } from "@prismicio/client";
 import { PrismicNextImage, PrismicNextLink } from "@prismicio/next";
 import { JSXMapSerializer, PrismicRichText, SliceComponentProps } from "@prismicio/react";
 
-const components: JSXMapSerializer = {
-  heading1: ({children}) => <Heading 
-    as="h1" 
-    className="md:mb-8 mb-4 mt-12 first:mt-0 last:mb0">
-      {children}
-  </Heading>,
-  paragraph: ({children}) => <p className="text-2xl font-body text-center font-normal leading-10 text-slate-600 mb-4 md:mb-8 max-w-md">{children}</p>
-}
+// const components: JSXMapSerializer = {
+//   heading1: ({children}) => <Heading 
+//     as="h1" 
+//     className="md:mb-8 mb-4 mt-12 first:mt-0 last:mb0">
+//       {children}
+//   </Heading>,
+//   paragraph: ({children}) => <p className="text-2xl font-body text-center font-normal leading-10 text-slate-600 mb-4 md:mb-8 max-w-md">{children}</p>
+// }
 
 /**
  * Props for `Hero`.
@@ -24,28 +21,20 @@ export type HeroProps = SliceComponentProps<Content.HeroSlice>;
  */
 const Hero = ({ slice }: HeroProps): JSX.Element => {
   return (
-    <Bounded
+    <section
       data-slice-type={slice.slice_type}
       data-slice-variation={slice.variation}
     >
         <div className="grid grid-cols-1 place-items-center text-center">
-      <PrismicRichText
-        field={slice.primary.heading}
-        components={components}
-      />
+      {/* <h1>{slice.primary.heading}</h1> */}
       <PrismicRichText
         field={slice.primary.body}
-        components={components}
-      />
-      <Button
-        field={slice.primary.button_link}
-        className="mb-8 md:mb-10"
-      >
+      />    
         {slice.primary.button_text}
-      </Button>
+    
       <PrismicNextImage field={slice.primary.image} />
       </div>
-    </Bounded>
+    </section>
   );
 };
 
