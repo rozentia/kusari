@@ -1487,6 +1487,16 @@ export interface FeaturesSliceDefaultItem {
   description: prismic.RichTextField;
 
   /**
+   * Image field in *Features → Items*
+   *
+   * - **Field Type**: Image
+   * - **Placeholder**: *None*
+   * - **API ID Path**: features.items[].image
+   * - **Documentation**: https://prismic.io/docs/field#image
+   */
+  image: prismic.ImageField<never>;
+
+  /**
    * Button Link field in *Features → Items*
    *
    * - **Field Type**: Link
@@ -1509,12 +1519,22 @@ export interface FeaturesSliceDefaultItem {
   /**
    * Icon Package field in *Features → Items*
    *
-   * - **Field Type**: Text
+   * - **Field Type**: Select
    * - **Placeholder**: *None*
+   * - **Default Value**: fontAwesome
    * - **API ID Path**: features.items[].icon_package
-   * - **Documentation**: https://prismic.io/docs/field#key-text
+   * - **Documentation**: https://prismic.io/docs/field#select
    */
-  icon_package: prismic.KeyTextField;
+  icon_package: prismic.SelectField<
+    | "fontAwesome"
+    | "ion"
+    | "feather"
+    | "lineAwesome"
+    | "antDesign"
+    | "circum"
+    | "remix",
+    "filled"
+  >;
 
   /**
    * Icon Name field in *Features → Items*
@@ -1525,6 +1545,17 @@ export interface FeaturesSliceDefaultItem {
    * - **Documentation**: https://prismic.io/docs/field#key-text
    */
   icon_name: prismic.KeyTextField;
+
+  /**
+   * is Light field in *Features → Items*
+   *
+   * - **Field Type**: Boolean
+   * - **Placeholder**: *None*
+   * - **Default Value**: false
+   * - **API ID Path**: features.items[].islight
+   * - **Documentation**: https://prismic.io/docs/field#boolean
+   */
+  islight: prismic.BooleanField;
 }
 
 /**
@@ -1547,12 +1578,12 @@ export interface FeaturesSliceFeaturesGridItem {
   /**
    * Title field in *Features → Items*
    *
-   * - **Field Type**: Title
+   * - **Field Type**: Text
    * - **Placeholder**: *None*
    * - **API ID Path**: features.items[].title
-   * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+   * - **Documentation**: https://prismic.io/docs/field#key-text
    */
-  title: prismic.TitleField;
+  title: prismic.KeyTextField;
 
   /**
    * Description field in *Features → Items*
@@ -1567,12 +1598,22 @@ export interface FeaturesSliceFeaturesGridItem {
   /**
    * Icon Package field in *Features → Items*
    *
-   * - **Field Type**: Text
+   * - **Field Type**: Select
    * - **Placeholder**: *None*
+   * - **Default Value**: fontAwesome
    * - **API ID Path**: features.items[].icon_package
-   * - **Documentation**: https://prismic.io/docs/field#key-text
+   * - **Documentation**: https://prismic.io/docs/field#select
    */
-  icon_package: prismic.KeyTextField;
+  icon_package: prismic.SelectField<
+    | "fontAwesome"
+    | "ion"
+    | "feather"
+    | "lineAwesome"
+    | "antDesign"
+    | "circum"
+    | "remix",
+    "filled"
+  >;
 
   /**
    * Icon Name field in *Features → Items*

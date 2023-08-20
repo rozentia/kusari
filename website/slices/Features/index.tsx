@@ -1,13 +1,11 @@
+import { kBodyStyle } from "@/constants/classNames";
 import { Content } from "@prismicio/client";
 import { PrismicNextImage, PrismicNextLink } from "@prismicio/next";
 import { JSXMapSerializer, PrismicRichText, SliceComponentProps } from "@prismicio/react";
-
-const icons = {
-  calendar: "Calendar",
-  clover: "Clover",
-  hourglass: "Hourglass",
-  bargraph: "Bargraph"
-}
+import Section from "@/components/Section";
+import Heading from "@/components/Heading";
+import FeaturesDefaultSlice from "./FeaturesDefault";
+import FeaturesGridSlice from "./FeaturesGrid";
 
 /**
  * Props for `Features`.
@@ -18,20 +16,21 @@ export type FeaturesProps = SliceComponentProps<Content.FeaturesSlice>;
  * Component for "Features" Slices.
  */
 const Features = ({ slice }: FeaturesProps): JSX.Element => {
+  const {items, variation} = slice
   return (
     <section
       data-slice-type={slice.slice_type}
       data-slice-variation={slice.variation}
+      className={process.env.NODE_ENV != 'production' ? kBodyStyle : ''}
     >
-      <h1>{slice.primary.heading}</h1>
-      <div className="grid sm:grid-cols-2 lg:grid-cols-4 max-w-5xl gap-x-8 gap-y-12 mx-auto sm:place-items-start place-items-center">
-        {slice.items.map((item, index) => (
-          <div key={index} className="max-w-xs grid sm:place-items-start place-items-center">
-          <PrismicRichText field={item.description} />
-          </div>
-        )
-        )}
-      </div>
+      <Section className={variation === 'default' ? "overflow-hidden" : ""}>
+        {(slice.primary.heading?.length || 0) > 0 && <Heading 
+          className="md:max-w-md lg:max-w-2xl" 
+          title={slice.primary.heading} 
+        />}
+        {variation === 'default' && <FeaturesDefaultSlice items={items} />}
+        {variation === 'featuresGrid' && <FeaturesGridSlice items={items} />}
+      </Section>
     </section>
   );
 };

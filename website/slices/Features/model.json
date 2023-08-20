@@ -31,6 +31,10 @@
             "single": "paragraph,strong,em"
           }
         },
+        "image": {
+          "type": "Image",
+          "config": { "label": "Image", "constraint": {}, "thumbnails": [] }
+        },
         "button_link": {
           "type": "Link",
           "config": {
@@ -44,12 +48,34 @@
           "config": { "label": "Button Text", "placeholder": "" }
         },
         "icon_package": {
-          "type": "Text",
-          "config": { "label": "Icon Package", "placeholder": "" }
+          "type": "Select",
+          "config": {
+            "label": "Icon Package",
+            "placeholder": "",
+            "options": [
+              "fontAwesome",
+              "ion",
+              "feather",
+              "lineAwesome",
+              "antDesign",
+              "circum",
+              "remix"
+            ],
+            "default_value": "fontAwesome"
+          }
         },
         "icon_name": {
           "type": "Text",
           "config": { "label": "Icon Name", "placeholder": "" }
+        },
+        "islight": {
+          "type": "Boolean",
+          "config": {
+            "label": "is Light",
+            "default_value": false,
+            "placeholder_true": "true",
+            "placeholder_false": "false"
+          }
         }
       }
     },
@@ -63,13 +89,8 @@
       "primary": {},
       "items": {
         "title": {
-          "type": "StructuredText",
-          "config": {
-            "label": "Title",
-            "placeholder": "",
-            "allowTargetBlank": true,
-            "single": "heading3"
-          }
+          "type": "Text",
+          "config": { "label": "Title", "placeholder": "" }
         },
         "description": {
           "type": "StructuredText",
@@ -81,8 +102,21 @@
           }
         },
         "icon_package": {
-          "type": "Text",
-          "config": { "label": "Icon Package", "placeholder": "" }
+          "type": "Select",
+          "config": {
+            "label": "Icon Package",
+            "placeholder": "",
+            "options": [
+              "fontAwesome",
+              "ion",
+              "feather",
+              "lineAwesome",
+              "antDesign",
+              "circum",
+              "remix"
+            ],
+            "default_value": "fontAwesome"
+          }
         },
         "icon_name": {
           "type": "Text",
