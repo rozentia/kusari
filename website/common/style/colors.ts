@@ -1,0 +1,1 @@
+export const kDefaultIconColor = "#AC6AFF"

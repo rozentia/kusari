@@ -2439,24 +2439,14 @@ export interface ShowcaseSliceTripleFeatureShowcasePrimary {
   heading: prismic.KeyTextField;
 
   /**
-   * Heading Highlight field in *Showcase → Primary*
+   * Text field in *Showcase → Primary*
    *
    * - **Field Type**: Text
    * - **Placeholder**: *None*
-   * - **API ID Path**: showcase.primary.heading_highlight
+   * - **API ID Path**: showcase.primary.text
    * - **Documentation**: https://prismic.io/docs/field#key-text
    */
-  heading_highlight: prismic.KeyTextField;
-
-  /**
-   * Text field in *Showcase → Primary*
-   *
-   * - **Field Type**: Rich Text
-   * - **Placeholder**: *None*
-   * - **API ID Path**: showcase.primary.text
-   * - **Documentation**: https://prismic.io/docs/field#rich-text-title
-   */
-  text: prismic.RichTextField;
+  text: prismic.KeyTextField;
 
   /**
    * Button Link field in *Showcase → Primary*
@@ -2726,6 +2716,16 @@ export interface ShowcaseSliceLeftShowcaseWithIconsPrimary {
    * - **Documentation**: https://prismic.io/docs/field#image
    */
   image: prismic.ImageField<never>;
+
+  /**
+   * Text field in *Showcase → Primary*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: showcase.primary.text
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  text: prismic.KeyTextField;
 }
 
 /**
@@ -2753,14 +2753,24 @@ export interface ShowcaseSliceLeftShowcaseWithIconsItem {
   description: prismic.RichTextField;
 
   /**
-   * Icon Package field in *Showcase → Items*
+   * Icon package field in *Showcase → Items*
    *
-   * - **Field Type**: Text
+   * - **Field Type**: Select
    * - **Placeholder**: *None*
+   * - **Default Value**: fontAwesome
    * - **API ID Path**: showcase.items[].icon_package
-   * - **Documentation**: https://prismic.io/docs/field#key-text
+   * - **Documentation**: https://prismic.io/docs/field#select
    */
-  icon_package: prismic.KeyTextField;
+  icon_package: prismic.SelectField<
+    | "fontAwesome"
+    | "ion"
+    | "feather"
+    | "lineAwesome"
+    | "antDesign"
+    | "circum"
+    | "remix",
+    "filled"
+  >;
 
   /**
    * Icon Name field in *Showcase → Items*
@@ -2809,6 +2819,16 @@ export interface ShowcaseSliceRightShowcaseWithIconsPrimary {
    * - **Documentation**: https://prismic.io/docs/field#image
    */
   image: prismic.ImageField<never>;
+
+  /**
+   * Text field in *Showcase → Primary*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: showcase.primary.text
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  text: prismic.KeyTextField;
 }
 
 /**
@@ -2838,12 +2858,22 @@ export interface ShowcaseSliceRightShowcaseWithIconsItem {
   /**
    * Icon Package field in *Showcase → Items*
    *
-   * - **Field Type**: Text
+   * - **Field Type**: Select
    * - **Placeholder**: *None*
+   * - **Default Value**: fontAwesome
    * - **API ID Path**: showcase.items[].icon_package
-   * - **Documentation**: https://prismic.io/docs/field#key-text
+   * - **Documentation**: https://prismic.io/docs/field#select
    */
-  icon_package: prismic.KeyTextField;
+  icon_package: prismic.SelectField<
+    | "fontAwesome"
+    | "ion"
+    | "feather"
+    | "lineAwesome"
+    | "antDesign"
+    | "circum"
+    | "remix",
+    "filled"
+  >;
 
   /**
    * Icon Name field in *Showcase → Items*

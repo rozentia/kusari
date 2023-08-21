@@ -56,18 +56,9 @@
           "type": "Text",
           "config": { "label": "Heading", "placeholder": "" }
         },
-        "heading_highlight": {
-          "type": "Text",
-          "config": { "label": "Heading Highlight", "placeholder": "" }
-        },
         "text": {
-          "type": "StructuredText",
-          "config": {
-            "label": "Text",
-            "placeholder": "",
-            "allowTargetBlank": true,
-            "multi": "paragraph,hyperlink,strong,em"
-          }
+          "type": "Text",
+          "config": { "label": "Text", "placeholder": "" }
         },
         "button_link": {
           "type": "Link",
@@ -207,6 +198,10 @@
         "image": {
           "type": "Image",
           "config": { "label": "Image", "constraint": {}, "thumbnails": [] }
+        },
+        "text": {
+          "type": "Text",
+          "config": { "label": "Text", "placeholder": "" }
         }
       },
       "items": {
@@ -224,8 +219,21 @@
           }
         },
         "icon_package": {
-          "type": "Text",
-          "config": { "label": "Icon Package", "placeholder": "" }
+          "type": "Select",
+          "config": {
+            "label": "Icon package",
+            "placeholder": "",
+            "options": [
+              "fontAwesome",
+              "ion",
+              "feather",
+              "lineAwesome",
+              "antDesign",
+              "circum",
+              "remix"
+            ],
+            "default_value": "fontAwesome"
+          }
         },
         "icon_name": {
           "type": "Text",
@@ -248,6 +256,10 @@
         "image": {
           "type": "Image",
           "config": { "label": "Image", "constraint": {}, "thumbnails": [] }
+        },
+        "text": {
+          "type": "Text",
+          "config": { "label": "Text", "placeholder": "" }
         }
       },
       "items": {
@@ -265,8 +277,21 @@
           }
         },
         "icon_package": {
-          "type": "Text",
-          "config": { "label": "Icon Package", "placeholder": "" }
+          "type": "Select",
+          "config": {
+            "label": "Icon Package",
+            "placeholder": "",
+            "options": [
+              "fontAwesome",
+              "ion",
+              "feather",
+              "lineAwesome",
+              "antDesign",
+              "circum",
+              "remix"
+            ],
+            "default_value": "fontAwesome"
+          }
         },
         "icon_name": {
           "type": "Text",
