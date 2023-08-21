@@ -47,15 +47,6 @@
             "multi": "paragraph,strong,em,hyperlink"
           }
         },
-        "short_text": {
-          "type": "StructuredText",
-          "config": {
-            "label": "Short Text",
-            "placeholder": "",
-            "allowTargetBlank": true,
-            "single": "paragraph,strong,em"
-          }
-        },
         "date": {
           "type": "Date",
           "config": { "label": "Date", "placeholder": "" }
@@ -72,6 +63,15 @@
         "image": {
           "type": "Image",
           "config": { "label": "Image", "constraint": {}, "thumbnails": [] }
+        },
+        "colorful": {
+          "type": "Boolean",
+          "config": {
+            "label": "Colorful",
+            "default_value": false,
+            "placeholder_true": "true",
+            "placeholder_false": "false"
+          }
         }
       }
     },
@@ -82,28 +82,7 @@
       "version": "initial",
       "description": "Default",
       "imageUrl": "",
-      "primary": {
-        "heading": {
-          "type": "Text",
-          "config": { "label": "Heading", "placeholder": "" }
-        },
-        "tagline": {
-          "type": "Text",
-          "config": { "label": "Tagline", "placeholder": "" }
-        },
-        "button_link": {
-          "type": "Link",
-          "config": {
-            "label": "Button Link",
-            "placeholder": "",
-            "select": null
-          }
-        },
-        "button_label": {
-          "type": "Text",
-          "config": { "label": "Button Label", "placeholder": "" }
-        }
-      },
+      "primary": {},
       "items": {
         "title": {
           "type": "Text",
@@ -118,15 +97,6 @@
             "multi": "paragraph,strong,em,hyperlink"
           }
         },
-        "short_text": {
-          "type": "StructuredText",
-          "config": {
-            "label": "Short Text",
-            "placeholder": "",
-            "allowTargetBlank": true,
-            "single": "paragraph,strong,em"
-          }
-        },
         "date": {
           "type": "Date",
           "config": { "label": "Date", "placeholder": "" }
@@ -139,10 +109,6 @@
             "options": ["inProgress", "inReview", "completed"],
             "default_value": "inProgress"
           }
-        },
-        "image": {
-          "type": "Image",
-          "config": { "label": "Image", "constraint": {}, "thumbnails": [] }
         }
       }
     }

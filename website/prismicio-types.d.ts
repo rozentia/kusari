@@ -2219,16 +2219,6 @@ export interface RoadMapSliceDefaultItem {
   text: prismic.RichTextField;
 
   /**
-   * Short Text field in *RoadMap → Items*
-   *
-   * - **Field Type**: Rich Text
-   * - **Placeholder**: *None*
-   * - **API ID Path**: road_map.items[].short_text
-   * - **Documentation**: https://prismic.io/docs/field#rich-text-title
-   */
-  short_text: prismic.RichTextField;
-
-  /**
    * Date field in *RoadMap → Items*
    *
    * - **Field Type**: Date
@@ -2261,6 +2251,17 @@ export interface RoadMapSliceDefaultItem {
    * - **Documentation**: https://prismic.io/docs/field#image
    */
   image: prismic.ImageField<never>;
+
+  /**
+   * Colorful field in *RoadMap → Items*
+   *
+   * - **Field Type**: Boolean
+   * - **Placeholder**: *None*
+   * - **Default Value**: false
+   * - **API ID Path**: road_map.items[].colorful
+   * - **Documentation**: https://prismic.io/docs/field#boolean
+   */
+  colorful: prismic.BooleanField;
 }
 
 /**
@@ -2275,51 +2276,6 @@ export type RoadMapSliceDefault = prismic.SharedSliceVariation<
   Simplify<RoadMapSliceDefaultPrimary>,
   Simplify<RoadMapSliceDefaultItem>
 >;
-
-/**
- * Primary content in *RoadMap → Primary*
- */
-export interface RoadMapSliceDetailPrimary {
-  /**
-   * Heading field in *RoadMap → Primary*
-   *
-   * - **Field Type**: Text
-   * - **Placeholder**: *None*
-   * - **API ID Path**: road_map.primary.heading
-   * - **Documentation**: https://prismic.io/docs/field#key-text
-   */
-  heading: prismic.KeyTextField;
-
-  /**
-   * Tagline field in *RoadMap → Primary*
-   *
-   * - **Field Type**: Text
-   * - **Placeholder**: *None*
-   * - **API ID Path**: road_map.primary.tagline
-   * - **Documentation**: https://prismic.io/docs/field#key-text
-   */
-  tagline: prismic.KeyTextField;
-
-  /**
-   * Button Link field in *RoadMap → Primary*
-   *
-   * - **Field Type**: Link
-   * - **Placeholder**: *None*
-   * - **API ID Path**: road_map.primary.button_link
-   * - **Documentation**: https://prismic.io/docs/field#link-content-relationship
-   */
-  button_link: prismic.LinkField;
-
-  /**
-   * Button Label field in *RoadMap → Primary*
-   *
-   * - **Field Type**: Text
-   * - **Placeholder**: *None*
-   * - **API ID Path**: road_map.primary.button_label
-   * - **Documentation**: https://prismic.io/docs/field#key-text
-   */
-  button_label: prismic.KeyTextField;
-}
 
 /**
  * Primary content in *RoadMap → Items*
@@ -2346,16 +2302,6 @@ export interface RoadMapSliceDetailItem {
   text: prismic.RichTextField;
 
   /**
-   * Short Text field in *RoadMap → Items*
-   *
-   * - **Field Type**: Rich Text
-   * - **Placeholder**: *None*
-   * - **API ID Path**: road_map.items[].short_text
-   * - **Documentation**: https://prismic.io/docs/field#rich-text-title
-   */
-  short_text: prismic.RichTextField;
-
-  /**
    * Date field in *RoadMap → Items*
    *
    * - **Field Type**: Date
@@ -2378,16 +2324,6 @@ export interface RoadMapSliceDetailItem {
     "inProgress" | "inReview" | "completed",
     "filled"
   >;
-
-  /**
-   * Image field in *RoadMap → Items*
-   *
-   * - **Field Type**: Image
-   * - **Placeholder**: *None*
-   * - **API ID Path**: road_map.items[].image
-   * - **Documentation**: https://prismic.io/docs/field#image
-   */
-  image: prismic.ImageField<never>;
 }
 
 /**
@@ -2399,7 +2335,7 @@ export interface RoadMapSliceDetailItem {
  */
 export type RoadMapSliceDetail = prismic.SharedSliceVariation<
   "detail",
-  Simplify<RoadMapSliceDetailPrimary>,
+  Record<string, never>,
   Simplify<RoadMapSliceDetailItem>
 >;
 
@@ -3143,7 +3079,6 @@ declare module "@prismicio/client" {
       RoadMapSlice,
       RoadMapSliceDefaultPrimary,
       RoadMapSliceDefaultItem,
-      RoadMapSliceDetailPrimary,
       RoadMapSliceDetailItem,
       RoadMapSliceVariation,
       RoadMapSliceDefault,

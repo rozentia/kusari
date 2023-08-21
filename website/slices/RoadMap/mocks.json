@@ -5,13 +5,13 @@
 		"primary": {
 			"heading": {
 				"__TYPE__": "FieldContent",
-				"value": "thread",
-				"type": "Text"
+				"type": "Text",
+				"value": "What we’re working on"
 			},
 			"tagline": {
 				"__TYPE__": "FieldContent",
-				"value": "sure",
-				"type": "Text"
+				"type": "Text",
+				"value": "Ready to get started"
 			},
 			"button_link": {
 				"__TYPE__": "LinkContent",
@@ -22,8 +22,8 @@
 			},
 			"button_label": {
 				"__TYPE__": "FieldContent",
-				"value": "temperature",
-				"type": "Text"
+				"type": "Text",
+				"value": "our roadmap"
 			}
 		},
 		"items": [
@@ -34,8 +34,8 @@
 						"title",
 						{
 							"__TYPE__": "FieldContent",
-							"value": "drink",
-							"type": "Text"
+							"type": "Text",
+							"value": "Voice recognition"
 						}
 					],
 					[
@@ -46,22 +46,10 @@
 								{
 									"type": "paragraph",
 									"content": {
-										"text": "Esse proident incididunt qui amet aliqua nisi eu ut cupidatat ut reprehenderit ut anim. Dolor eiusmod voluptate aliquip cillum ea exercitation qui qui et pariatur do est laboris in eiusmod."
-									}
-								}
-							]
-						}
-					],
-					[
-						"short_text",
-						{
-							"__TYPE__": "StructuredTextContent",
-							"value": [
-								{
-									"type": "paragraph",
-									"content": {
-										"text": "Enim nulla id ad ad non nostrud eiusmod consectetur officia. Qui sint ea labore anim dolor tempor laboris aliqua. Deserunt mollit irure non et ut laborum ut nisi ut sunt laborum ex esse Lorem et."
-									}
+										"text": "Enable the chatbot to understand and respond to voice commands, making it easier for users to interact with the app hands-free.",
+										"spans": []
+									},
+									"direction": "ltr"
 								}
 							]
 						}
@@ -86,60 +74,37 @@
 						"image",
 						{
 							"origin": {
-								"id": "main",
-								"url": "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d",
-								"width": 4076,
-								"height": 2712
+								"id": "Bd7gNnWJBkU",
+								"url": "https://images.unsplash.com/photo-1525547719571-a2d4ac8945e2?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHw0fHxjb21wdXRlcnxlbnwwfHx8fDE2OTI1NTU2OTV8MA&ixlib=rb-4.0.3&q=85",
+								"width": 3648,
+								"height": 4560
 							},
-							"url": "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d",
-							"width": 4076,
-							"height": 2712,
+							"url": "https://images.unsplash.com/photo-1525547719571-a2d4ac8945e2?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHw0fHxjb21wdXRlcnxlbnwwfHx8fDE2OTI1NTU2OTV8MA&ixlib=rb-4.0.3&q=85",
+							"width": 3648,
+							"height": 4560,
 							"edit": {
+								"background": "transparent",
 								"zoom": 1,
 								"crop": {
 									"x": 0,
 									"y": 0
-								},
-								"background": "transparent"
+								}
 							},
 							"credits": null,
 							"alt": null,
 							"__TYPE__": "ImageContent",
 							"thumbnails": {}
 						}
+					],
+					[
+						"colorful",
+						{
+							"__TYPE__": "BooleanContent",
+							"value": true
+						}
 					]
 				]
-			}
-		]
-	},
-	{
-		"__TYPE__": "SharedSliceContent",
-		"variation": "detail",
-		"primary": {
-			"heading": {
-				"__TYPE__": "FieldContent",
-				"value": "great",
-				"type": "Text"
 			},
-			"tagline": {
-				"__TYPE__": "FieldContent",
-				"value": "sleep",
-				"type": "Text"
-			},
-			"button_link": {
-				"__TYPE__": "LinkContent",
-				"value": {
-					"__TYPE__": "ExternalLink",
-					"url": "http://google.com"
-				}
-			},
-			"button_label": {
-				"__TYPE__": "FieldContent",
-				"value": "laid",
-				"type": "Text"
-			}
-		},
-		"items": [
 			{
 				"__TYPE__": "GroupItemContent",
 				"value": [
@@ -147,8 +112,8 @@
 						"title",
 						{
 							"__TYPE__": "FieldContent",
-							"value": "strip",
-							"type": "Text"
+							"type": "Text",
+							"value": "Gamification"
 						}
 					],
 					[
@@ -159,22 +124,237 @@
 								{
 									"type": "paragraph",
 									"content": {
-										"text": "Qui exercitation excepteur laborum ex ullamco sunt mollit id velit nulla aliqua in magna occaecat ea. Esse esse cupidatat fugiat ea occaecat."
-									}
+										"text": "Add game-like elements, such as badges or leaderboards, to incentivize users to engage with the chatbot more frequently.",
+										"spans": []
+									},
+									"direction": "ltr"
 								}
 							]
 						}
 					],
 					[
-						"short_text",
+						"status",
+						{
+							"__TYPE__": "FieldContent",
+							"type": "Select",
+							"value": "completed"
+						}
+					],
+					[
+						"image",
+						{
+							"url": "https://images.unsplash.com/photo-1537498425277-c283d32ef9db?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHw3fHxjb21wdXRlcnxlbnwwfHx8fDE2OTI1NTU2OTV8MA&ixlib=rb-4.0.3&q=85",
+							"origin": {
+								"id": "WiONHd_zYI4",
+								"url": "https://images.unsplash.com/photo-1537498425277-c283d32ef9db?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHw3fHxjb21wdXRlcnxlbnwwfHx8fDE2OTI1NTU2OTV8MA&ixlib=rb-4.0.3&q=85",
+								"width": 4380,
+								"height": 2895
+							},
+							"width": 4380,
+							"height": 2895,
+							"edit": {
+								"background": "transparent",
+								"zoom": 1,
+								"crop": {
+									"x": 0,
+									"y": 0
+								}
+							},
+							"credits": null,
+							"alt": null,
+							"__TYPE__": "ImageContent",
+							"thumbnails": {}
+						}
+					],
+					[
+						"date",
+						{
+							"__TYPE__": "FieldContent",
+							"type": "Date",
+							"value": "2021-07-12"
+						}
+					]
+				]
+			},
+			{
+				"__TYPE__": "GroupItemContent",
+				"value": [
+					[
+						"title",
+						{
+							"__TYPE__": "FieldContent",
+							"type": "Text",
+							"value": "Chatbot customization"
+						}
+					],
+					[
+						"text",
 						{
 							"__TYPE__": "StructuredTextContent",
 							"value": [
 								{
 									"type": "paragraph",
 									"content": {
-										"text": "Id adipisicing culpa non."
-									}
+										"text": "Allow users to customize the chatbot's appearance and behavior, making it more engaging and fun to interact with.",
+										"spans": []
+									},
+									"direction": "ltr"
+								}
+							]
+						}
+					],
+					[
+						"date",
+						{
+							"__TYPE__": "FieldContent",
+							"type": "Date",
+							"value": "2023-03-15"
+						}
+					],
+					[
+						"status",
+						{
+							"__TYPE__": "FieldContent",
+							"type": "Select",
+							"value": "inReview"
+						}
+					],
+					[
+						"image",
+						{
+							"url": "https://images.unsplash.com/photo-1550745165-9bc0b252726f?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwyN3x8Y29tcHV0ZXJ8ZW58MHx8fHwxNjkyNTU1Njk1fDA&ixlib=rb-4.0.3&q=85",
+							"origin": {
+								"id": "p0j-mE6mGo4",
+								"url": "https://images.unsplash.com/photo-1550745165-9bc0b252726f?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwyN3x8Y29tcHV0ZXJ8ZW58MHx8fHwxNjkyNTU1Njk1fDA&ixlib=rb-4.0.3&q=85",
+								"width": 6048,
+								"height": 4032
+							},
+							"width": 6048,
+							"height": 4032,
+							"edit": {
+								"background": "transparent",
+								"zoom": 1,
+								"crop": {
+									"x": 0,
+									"y": 0
+								}
+							},
+							"credits": null,
+							"alt": null,
+							"__TYPE__": "ImageContent",
+							"thumbnails": {}
+						}
+					]
+				]
+			},
+			{
+				"__TYPE__": "GroupItemContent",
+				"value": [
+					[
+						"title",
+						{
+							"__TYPE__": "FieldContent",
+							"type": "Text",
+							"value": "Integration with APIs"
+						}
+					],
+					[
+						"text",
+						{
+							"__TYPE__": "StructuredTextContent",
+							"value": [
+								{
+									"type": "paragraph",
+									"content": {
+										"text": "Allow the chatbot to access external data sources, such as weather APIs or news APIs, to provide more relevant recommendations.",
+										"spans": []
+									},
+									"direction": "ltr"
+								}
+							]
+						}
+					],
+					[
+						"date",
+						{
+							"__TYPE__": "FieldContent",
+							"type": "Date",
+							"value": "2023-04-18"
+						}
+					],
+					[
+						"status",
+						{
+							"__TYPE__": "FieldContent",
+							"type": "Select",
+							"value": "completed"
+						}
+					],
+					[
+						"image",
+						{
+							"url": "https://images.unsplash.com/photo-1560762484-813fc97650a0?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwyMHx8Y29tcHV0ZXJ8ZW58MHx8fHwxNjkyNTU1Njk1fDA&ixlib=rb-4.0.3&q=85",
+							"origin": {
+								"id": "iGLLtLINSkw",
+								"url": "https://images.unsplash.com/photo-1560762484-813fc97650a0?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwyMHx8Y29tcHV0ZXJ8ZW58MHx8fHwxNjkyNTU1Njk1fDA&ixlib=rb-4.0.3&q=85",
+								"width": 3344,
+								"height": 2509
+							},
+							"width": 3344,
+							"height": 2509,
+							"edit": {
+								"background": "transparent",
+								"zoom": 1,
+								"crop": {
+									"x": 0,
+									"y": 0
+								}
+							},
+							"credits": null,
+							"alt": null,
+							"__TYPE__": "ImageContent",
+							"thumbnails": {}
+						}
+					],
+					[
+						"colorful",
+						{
+							"__TYPE__": "BooleanContent",
+							"value": true
+						}
+					]
+				]
+			}
+		]
+	},
+	{
+		"__TYPE__": "SharedSliceContent",
+		"variation": "detail",
+		"primary": {},
+		"items": [
+			{
+				"__TYPE__": "GroupItemContent",
+				"value": [
+					[
+						"title",
+						{
+							"__TYPE__": "FieldContent",
+							"type": "Text",
+							"value": "Define the problem"
+						}
+					],
+					[
+						"text",
+						{
+							"__TYPE__": "StructuredTextContent",
+							"value": [
+								{
+									"type": "paragraph",
+									"content": {
+										"text": "Identify the problem that your chat AI app will solve. Determine the target audience and their needs.",
+										"spans": []
+									},
+									"direction": "ltr"
 								}
 							]
 						}
@@ -194,29 +374,177 @@
 							"value": "completed",
 							"type": "Select"
 						}
+					]
+				]
+			},
+			{
+				"__TYPE__": "GroupItemContent",
+				"value": [
+					[
+						"title",
+						{
+							"__TYPE__": "FieldContent",
+							"type": "Text",
+							"value": "Gather data"
+						}
 					],
 					[
-						"image",
+						"text",
 						{
-							"__TYPE__": "ImageContent",
-							"origin": {
-								"id": "main",
-								"url": "https://images.unsplash.com/photo-1591012911207-0dbac31f37da",
-								"width": 4000,
-								"height": 4000
-							},
-							"url": "https://images.unsplash.com/photo-1591012911207-0dbac31f37da",
-							"width": 4000,
-							"height": 4000,
-							"edit": {
-								"zoom": 1,
-								"crop": {
-									"x": 0,
-									"y": 0
-								},
-								"background": "transparent"
-							},
-							"thumbnails": {}
+							"__TYPE__": "StructuredTextContent",
+							"value": [
+								{
+									"type": "paragraph",
+									"content": {
+										"text": "Gather data that will help you understand the target audience and their needs. This can include user surveys, feedback, and other sources of data.",
+										"spans": []
+									},
+									"direction": "ltr"
+								}
+							]
+						}
+					],
+					[
+						"date",
+						{
+							"__TYPE__": "FieldContent",
+							"type": "Date",
+							"value": "2023-05-15"
+						}
+					]
+				]
+			},
+			{
+				"__TYPE__": "GroupItemContent",
+				"value": [
+					[
+						"title",
+						{
+							"__TYPE__": "FieldContent",
+							"type": "Text",
+							"value": "Design the chatbot"
+						}
+					],
+					[
+						"text",
+						{
+							"__TYPE__": "StructuredTextContent",
+							"value": [
+								{
+									"type": "paragraph",
+									"content": {
+										"text": "Design the chatbot that will be the backbone of your app. Determine the features and functionalities that it needs to have.",
+										"spans": []
+									},
+									"direction": "ltr"
+								}
+							]
+						}
+					],
+					[
+						"date",
+						{
+							"__TYPE__": "FieldContent",
+							"type": "Date",
+							"value": "2023-05-15"
+						}
+					],
+					[
+						"status",
+						{
+							"__TYPE__": "FieldContent",
+							"type": "Select",
+							"value": "inReview"
+						}
+					]
+				]
+			},
+			{
+				"__TYPE__": "GroupItemContent",
+				"value": [
+					[
+						"title",
+						{
+							"__TYPE__": "FieldContent",
+							"type": "Text",
+							"value": "Train the chatbot"
+						}
+					],
+					[
+						"text",
+						{
+							"__TYPE__": "StructuredTextContent",
+							"value": [
+								{
+									"type": "paragraph",
+									"content": {
+										"text": "Train the chatbot using the data that you have gathered. This will help it understand the target audience and provide accurate recommendations.",
+										"spans": []
+									},
+									"direction": "ltr"
+								}
+							]
+						}
+					],
+					[
+						"date",
+						{
+							"__TYPE__": "FieldContent",
+							"type": "Date",
+							"value": "2023-04-23"
+						}
+					],
+					[
+						"status",
+						{
+							"__TYPE__": "FieldContent",
+							"type": "Select",
+							"value": "completed"
+						}
+					]
+				]
+			},
+			{
+				"__TYPE__": "GroupItemContent",
+				"value": [
+					[
+						"title",
+						{
+							"__TYPE__": "FieldContent",
+							"type": "Text",
+							"value": "Build the app"
+						}
+					],
+					[
+						"text",
+						{
+							"__TYPE__": "StructuredTextContent",
+							"value": [
+								{
+									"type": "paragraph",
+									"content": {
+										"text": "Build the app around the chatbot. Determine the user interface, features, and functionalities that it needs to have.",
+										"spans": []
+									},
+									"direction": "ltr"
+								}
+							]
+						}
+					],
+					[
+						"date",
+						{
+							"__TYPE__": "FieldContent",
+							"type": "Date",
+							"value": "2023-07-25"
+						}
+					],
+					[
+						"status",
+						{
+							"__TYPE__": "FieldContent",
+							"type": "Select",
+							"value": "completed"
 						}
 					]
 				]
