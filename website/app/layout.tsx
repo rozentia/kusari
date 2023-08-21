@@ -1,18 +1,16 @@
 import "@splidejs/react-splide/css";
 import "tippy.js/animations/shift-toward.css";
 import "./globals.css";
-import { Sora, Source_Code_Pro, Space_Grotesk } from "next/font/google";
 import { createClient } from "@/prismicio";
 import { Metadata } from "next";
-import { content } from '@/mocks/collaboration';
 import { code, grotesk, sora } from "@/common/style/fonts";
+
 import { kBodyStyle } from "@/constants/classNames";
 
 //: https://nextjs.org/docs/app/api-reference/functions/generate-metadata
 export async function generateMetadata(): Promise<Metadata> {
     const client = createClient()
     const settings = await client.getSingle('settings')
-  
     return {
         icons: {
             icon: '/favicon.ico',
