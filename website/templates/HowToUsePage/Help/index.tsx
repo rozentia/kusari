@@ -27,7 +27,7 @@ const Help = ({}: HelpProps) => (
                         {
                             id: "0",
                             title: "Join our community",
-                            text: "Discuss anything with other users",
+                            text: "Discuss anything with other users and stay alert or get notified of everything that happens at Brainwave at all times.",
                         },
                         {
                             id: "1",

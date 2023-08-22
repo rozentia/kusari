@@ -135,7 +135,7 @@ const TripleFeatureShowcase = ({ data, items, containerClassName }: TripleFeatur
                                 }}
                             />}
                             
-                            <ul className="flex items-center justify-between">
+                            {!data.hide_icons && <ul className="flex items-center justify-between">
                                 {[
                                     "/images/icons/recording-03.svg",
                                     "/images/icons/recording-01.svg",
@@ -167,7 +167,7 @@ const TripleFeatureShowcase = ({ data, items, containerClassName }: TripleFeatur
                                         </div>
                                     </li>
                                 ))}
-                            </ul>
+                            </ul>}
                         </div>
                         <div className="relative h-[20.5rem] bg-n-8 rounded-xl overflow-hidden md:h-[25rem]">
                             {isFilled.image(thirdItem.image)
@@ -209,7 +209,7 @@ const TripleFeatureShowcase = ({ data, items, containerClassName }: TripleFeatur
                                     />
                                 </svg>
                             </div> */}
-                            <div className="absolute left-0 bottom-0 w-full flex items-center p-6">
+                            {!data.hide_video_controls && <div className="absolute left-0 bottom-0 w-full flex items-center p-6">
                                 <svg
                                     className="mr-3"
                                     xmlns="http://www.w3.org/2000/svg"
@@ -225,7 +225,7 @@ const TripleFeatureShowcase = ({ data, items, containerClassName }: TripleFeatur
                                 <div className="flex-1 bg-[#D9D9D9]">
                                     <div className="w-1/2 h-0.5 bg-color-1"></div>
                                 </div>
-                            </div>
+                            </div>}
                         </div>
                     </div>}
                 </div>

@@ -20,8 +20,8 @@ export type ShowcaseHorizontalWithIconsProps = {
 const ShowcaseHorizontalWithIcons = ({ data, items, isLeft }: ShowcaseHorizontalWithIconsProps): JSX.Element => {
   return (
     <Section crosses>
-        <div className="container pt-10 pb-10 lg:grid lg:grid-cols-2 lg:gap-20 lg:items-center lg:p-0">
-            <div className="hidden lg:block">
+        <div className="container pt-10 pb-10 lg:grid lg:grid-cols-2 lg:gap-20 lg:items-center lg:px-10">
+            <div className={`hidden lg:block ${isLeft && 'order-last'}`}>
                 <div>
                     {isFilled.image(data.image) 
                         ? <PrismicNextImage 
@@ -30,6 +30,7 @@ const ShowcaseHorizontalWithIcons = ({ data, items, isLeft }: ShowcaseHorizontal
                             height={756}
                         />
                         : <Image
+                            className="object-cover"
                             src="/images/help/help.png"
                             width={756}
                             height={756}
@@ -48,7 +49,7 @@ const ShowcaseHorizontalWithIcons = ({ data, items, isLeft }: ShowcaseHorizontal
                             className="flex items-center py-10 border-b border-n-1/15"
                             key={index}
                         >
-                            <div className="flex items-center justify-center w-15 h-15 mr-10 bg-n-7 border border-n-1/15 rounded-xl">
+                            <div className="flex items-center justify-center w-15 h-15 aspect-square mr-10 bg-n-7 border border-n-1/15 rounded-xl">
                                 <Icon packageName={item.icon_package} iconName={item.icon_name || "fa0"} size="24px" color={kDefaultIconColor} />
                             </div>
                             <div>

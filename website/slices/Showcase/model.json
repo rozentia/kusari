@@ -79,6 +79,24 @@
             "constraint": {},
             "thumbnails": []
           }
+        },
+        "hide_icons": {
+          "type": "Boolean",
+          "config": {
+            "label": "Hide Icons",
+            "default_value": false,
+            "placeholder_true": "true",
+            "placeholder_false": "false"
+          }
+        },
+        "hide_video_controls": {
+          "type": "Boolean",
+          "config": {
+            "label": "Hide Video Controls",
+            "default_value": false,
+            "placeholder_true": "true",
+            "placeholder_false": "false"
+          }
         }
       },
       "items": {
