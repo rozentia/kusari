@@ -3,7 +3,7 @@ import "tippy.js/animations/shift-toward.css";
 import "./globals.css";
 import { createClient } from "@/prismicio";
 import { Metadata } from "next";
-import { code, grotesk, sora } from "@/common/style/fonts";
+import { code, grotesk, nunito, sora } from "@/common/style/fonts";
 
 import { kBodyStyle } from "@/constants/classNames";
 
@@ -41,7 +41,7 @@ export default function RootLayout({
     children: React.ReactNode;
 }) {
     return (
-        <html lang="en">
+        <html lang="en" className="font-sans">
             <head>
                 <meta
                     name="viewport"
