@@ -85,5 +85,94 @@
 				"value": []
 			}
 		]
+	},
+	{
+		"__TYPE__": "SharedSliceContent",
+		"variation": "vertical",
+		"primary": {
+			"heading": {
+				"__TYPE__": "FieldContent",
+				"value": "door",
+				"type": "Text"
+			},
+			"body": {
+				"__TYPE__": "FieldContent",
+				"value": "broad",
+				"type": "Text"
+			},
+			"image": {
+				"__TYPE__": "ImageContent",
+				"origin": {
+					"id": "main",
+					"url": "https://images.unsplash.com/photo-1589652717521-10c0d092dea9",
+					"width": 4752,
+					"height": 3168
+				},
+				"url": "https://images.unsplash.com/photo-1589652717521-10c0d092dea9?rect=1264%2C0%2C2223%2C3168&w=654&h=932",
+				"width": 654,
+				"height": 932,
+				"edit": {
+					"zoom": 1,
+					"crop": {
+						"x": 1264,
+						"y": 0
+					},
+					"background": "transparent"
+				},
+				"thumbnails": {}
+			},
+			"button_link": {
+				"__TYPE__": "LinkContent",
+				"value": {
+					"__TYPE__": "ExternalLink",
+					"url": "http://google.com"
+				}
+			},
+			"button_label": {
+				"__TYPE__": "FieldContent",
+				"value": "alike",
+				"type": "Text"
+			},
+			"show_overlay": {
+				"__TYPE__": "BooleanContent",
+				"value": true
+			},
+			"overlay_text": {
+				"__TYPE__": "FieldContent",
+				"value": "stairs",
+				"type": "Text"
+			},
+			"out_of_bounds_image": {
+				"__TYPE__": "ImageContent",
+				"origin": {
+					"id": "main",
+					"url": "https://images.unsplash.com/photo-1596195689404-24d8a8d1c6ea",
+					"width": 5000,
+					"height": 4613
+				},
+				"url": "https://images.unsplash.com/photo-1596195689404-24d8a8d1c6ea?rect=1577%2C0%2C1845%2C4613&w=76&h=190",
+				"width": 76,
+				"height": 190,
+				"edit": {
+					"zoom": 1,
+					"crop": {
+						"x": 1577,
+						"y": 0
+					},
+					"background": "transparent"
+				},
+				"thumbnails": {}
+			},
+			"hide_out_of_bounds_image": {
+				"__TYPE__": "BooleanContent",
+				"value": false
+			}
+		},
+		"items": [
+			{
+				"__TYPE__": "GroupItemContent",
+				"value": []
+			}
+		]
 	}
 ]

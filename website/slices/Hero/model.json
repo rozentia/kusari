@@ -66,6 +66,75 @@
         }
       },
       "items": {}
+    },
+    {
+      "id": "vertical",
+      "name": "Vertical",
+      "docURL": "...",
+      "version": "initial",
+      "description": "Default",
+      "imageUrl": "",
+      "primary": {
+        "heading": {
+          "type": "Text",
+          "config": { "label": "Heading", "placeholder": "" }
+        },
+        "body": {
+          "type": "Text",
+          "config": { "label": "Body", "placeholder": "" }
+        },
+        "image": {
+          "type": "Image",
+          "config": {
+            "label": "Image",
+            "constraint": { "width": 654, "height": 932 },
+            "thumbnails": []
+          }
+        },
+        "out_of_bounds_image": {
+          "type": "Image",
+          "config": {
+            "label": "Out of Bounds Image",
+            "constraint": { "width": 76, "height": 190 },
+            "thumbnails": []
+          }
+        },
+        "hide_out_of_bounds_image": {
+          "type": "Boolean",
+          "config": {
+            "label": "Hide Out of Bounds Image",
+            "default_value": false,
+            "placeholder_true": "true",
+            "placeholder_false": "false"
+          }
+        },
+        "button_link": {
+          "type": "Link",
+          "config": {
+            "label": "Button Link",
+            "placeholder": "",
+            "select": null
+          }
+        },
+        "button_label": {
+          "type": "Text",
+          "config": { "label": "Button Label", "placeholder": "" }
+        },
+        "show_overlay": {
+          "type": "Boolean",
+          "config": {
+            "label": "Show Overlay",
+            "placeholder_false": "false",
+            "placeholder_true": "true",
+            "default_value": true
+          }
+        },
+        "overlay_text": {
+          "type": "Text",
+          "config": { "label": "Overlay Text", "placeholder": "" }
+        }
+      },
+      "items": {}
     }
   ]
 }

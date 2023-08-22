@@ -917,7 +917,17 @@ export type SettingsDocument<Lang extends string = string> =
 
 type SliceTestDocumentDataSlicesSlice =
   | CommunityTestimonialsSlice
-  | TestimonialsSlice;
+  | TestimonialsSlice
+  | CollaborationSlice
+  | FeaturesSlice
+  | FaqSlice
+  | RoadMapSlice
+  | HeroSlice
+  | PricingSlice
+  | BenefitsSlice
+  | FeaturesCarouselSlice
+  | ShowcaseSlice
+  | HowItWorksCarouselSlice;
 
 /**
  * Content for Slice Test documents
@@ -1900,9 +1910,122 @@ export type HeroSliceHorizontal = prismic.SharedSliceVariation<
 >;
 
 /**
+ * Primary content in *Hero → Primary*
+ */
+export interface HeroSliceVerticalPrimary {
+  /**
+   * Heading field in *Hero → Primary*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: hero.primary.heading
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  heading: prismic.KeyTextField;
+
+  /**
+   * Body field in *Hero → Primary*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: hero.primary.body
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  body: prismic.KeyTextField;
+
+  /**
+   * Image field in *Hero → Primary*
+   *
+   * - **Field Type**: Image
+   * - **Placeholder**: *None*
+   * - **API ID Path**: hero.primary.image
+   * - **Documentation**: https://prismic.io/docs/field#image
+   */
+  image: prismic.ImageField<never>;
+
+  /**
+   * Out of Bounds Image field in *Hero → Primary*
+   *
+   * - **Field Type**: Image
+   * - **Placeholder**: *None*
+   * - **API ID Path**: hero.primary.out_of_bounds_image
+   * - **Documentation**: https://prismic.io/docs/field#image
+   */
+  out_of_bounds_image: prismic.ImageField<never>;
+
+  /**
+   * Hide Out of Bounds Image field in *Hero → Primary*
+   *
+   * - **Field Type**: Boolean
+   * - **Placeholder**: *None*
+   * - **Default Value**: false
+   * - **API ID Path**: hero.primary.hide_out_of_bounds_image
+   * - **Documentation**: https://prismic.io/docs/field#boolean
+   */
+  hide_out_of_bounds_image: prismic.BooleanField;
+
+  /**
+   * Button Link field in *Hero → Primary*
+   *
+   * - **Field Type**: Link
+   * - **Placeholder**: *None*
+   * - **API ID Path**: hero.primary.button_link
+   * - **Documentation**: https://prismic.io/docs/field#link-content-relationship
+   */
+  button_link: prismic.LinkField;
+
+  /**
+   * Button Label field in *Hero → Primary*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: hero.primary.button_label
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  button_label: prismic.KeyTextField;
+
+  /**
+   * Show Overlay field in *Hero → Primary*
+   *
+   * - **Field Type**: Boolean
+   * - **Placeholder**: *None*
+   * - **Default Value**: true
+   * - **API ID Path**: hero.primary.show_overlay
+   * - **Documentation**: https://prismic.io/docs/field#boolean
+   */
+  show_overlay: prismic.BooleanField;
+
+  /**
+   * Overlay Text field in *Hero → Primary*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: hero.primary.overlay_text
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  overlay_text: prismic.KeyTextField;
+}
+
+/**
+ * Vertical variation for Hero Slice
+ *
+ * - **API ID**: `vertical`
+ * - **Description**: Default
+ * - **Documentation**: https://prismic.io/docs/slice
+ */
+export type HeroSliceVertical = prismic.SharedSliceVariation<
+  "vertical",
+  Simplify<HeroSliceVerticalPrimary>,
+  never
+>;
+
+/**
  * Slice variation for *Hero*
  */
-type HeroSliceVariation = HeroSliceDefault | HeroSliceHorizontal;
+type HeroSliceVariation =
+  | HeroSliceDefault
+  | HeroSliceHorizontal
+  | HeroSliceVertical;
 
 /**
  * Hero Shared Slice
@@ -2479,6 +2602,28 @@ export interface ShowcaseSliceTripleFeatureShowcasePrimary {
    * - **Documentation**: https://prismic.io/docs/field#image
    */
   foot_image: prismic.ImageField<never>;
+
+  /**
+   * Hide Icons field in *Showcase → Primary*
+   *
+   * - **Field Type**: Boolean
+   * - **Placeholder**: *None*
+   * - **Default Value**: false
+   * - **API ID Path**: showcase.primary.hide_icons
+   * - **Documentation**: https://prismic.io/docs/field#boolean
+   */
+  hide_icons: prismic.BooleanField;
+
+  /**
+   * Hide Video Controls field in *Showcase → Primary*
+   *
+   * - **Field Type**: Boolean
+   * - **Placeholder**: *None*
+   * - **Default Value**: false
+   * - **API ID Path**: showcase.primary.hide_video_controls
+   * - **Documentation**: https://prismic.io/docs/field#boolean
+   */
+  hide_video_controls: prismic.BooleanField;
 }
 
 /**
@@ -3093,9 +3238,11 @@ declare module "@prismicio/client" {
       HeroSlice,
       HeroSliceDefaultPrimary,
       HeroSliceHorizontalPrimary,
+      HeroSliceVerticalPrimary,
       HeroSliceVariation,
       HeroSliceDefault,
       HeroSliceHorizontal,
+      HeroSliceVertical,
       HowItWorksCarouselSlice,
       HowItWorksCarouselSliceDefaultItem,
       HowItWorksCarouselSliceVariation,

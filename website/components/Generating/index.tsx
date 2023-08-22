@@ -2,11 +2,12 @@ import Image from "../Image";
 
 type GeneratingProps = {
     className?: string;
+    text?: string;
 };
 
-const Generating = ({ className }: GeneratingProps) => (
+const Generating = ({ className, text }: GeneratingProps) => (
     <div
-        className={`flex items-center h-[3.375rem] px-6 bg-n-8/80 rounded-[1.6875rem] ${
+        className={`flex items-center h-[3.375rem] px-6 bg-n-8/70 rounded-[1.6875rem] ${
             className || ""
         } text-base`}
     >
@@ -17,7 +18,7 @@ const Generating = ({ className }: GeneratingProps) => (
             height={20}
             alt="Loading"
         />
-        AI is generating|
+        {text || 'AI is generating|'}
     </div>
 );
 

@@ -16,7 +16,17 @@
         "config": {
           "choices": {
             "community_testimonials": { "type": "SharedSlice" },
-            "testimonials": { "type": "SharedSlice" }
+            "testimonials": { "type": "SharedSlice" },
+            "collaboration": { "type": "SharedSlice" },
+            "features": { "type": "SharedSlice" },
+            "faq": { "type": "SharedSlice" },
+            "road_map": { "type": "SharedSlice" },
+            "hero": { "type": "SharedSlice" },
+            "pricing": { "type": "SharedSlice" },
+            "benefits": { "type": "SharedSlice" },
+            "features_carousel": { "type": "SharedSlice" },
+            "showcase": { "type": "SharedSlice" },
+            "how_it_works_carousel": { "type": "SharedSlice" }
           }
         }
       }

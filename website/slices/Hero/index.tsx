@@ -5,6 +5,7 @@ import { Content } from "@prismicio/client";
 import { SliceComponentProps } from "@prismicio/react";
 import HeroDefault from "./HeroDefault";
 import HeroHorizontal from "./HeroHorizontal";
+import HeroVertical from "./HeroVertical";
 
 /**
  * Props for `Hero`.
@@ -24,6 +25,7 @@ const Hero = ({ slice }: HeroProps): JSX.Element => {
     >
      {variation === 'default' && <HeroDefault data={primary}/>}
      {variation === 'horizontal' && <HeroHorizontal data={primary}/>}
+     {variation === 'vertical' && <HeroVertical data={primary} />}
     </section>
   );
 };
