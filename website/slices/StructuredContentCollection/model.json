@@ -1,0 +1,45 @@
+{
+  "id": "structured_content_collection",
+  "type": "SharedSlice",
+  "name": "StructuredContentCollection",
+  "description": "StructuredContentCollection",
+  "variations": [
+    {
+      "id": "default",
+      "name": "Default",
+      "docURL": "...",
+      "version": "initial",
+      "description": "Default",
+      "imageUrl": "",
+      "primary": {
+        "collection_heading": {
+          "type": "Text",
+          "config": { "label": "Collection Heading", "placeholder": "" }
+        },
+        "collection_subheading": {
+          "type": "Text",
+          "config": { "label": "Collection Subheading", "placeholder": "" }
+        },
+        "show_search": {
+          "type": "Boolean",
+          "config": {
+            "label": "Show search",
+            "placeholder_false": "false",
+            "placeholder_true": "true",
+            "default_value": false
+          }
+        }
+      },
+      "items": {
+        "content_section": {
+          "type": "Link",
+          "config": {
+            "label": "Content Section",
+            "select": "document",
+            "customtypes": ["content_section"]
+          }
+        }
+      }
+    }
+  ]
+}

@@ -26,7 +26,8 @@
             "benefits": { "type": "SharedSlice" },
             "features_carousel": { "type": "SharedSlice" },
             "showcase": { "type": "SharedSlice" },
-            "how_it_works_carousel": { "type": "SharedSlice" }
+            "how_it_works_carousel": { "type": "SharedSlice" },
+            "structured_content_collection": { "type": "SharedSlice" }
           }
         }
       }

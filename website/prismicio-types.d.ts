@@ -312,6 +312,118 @@ export type BlogPostDocument<Lang extends string = string> =
   >;
 
 /**
+ * Content for Content Block documents
+ */
+interface ContentBlockDocumentData {
+  /**
+   * Heading field in *Content Block*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: content_block.heading
+   * - **Tab**: Main
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  heading: prismic.KeyTextField;
+
+  /**
+   * Main Image field in *Content Block*
+   *
+   * - **Field Type**: Image
+   * - **Placeholder**: *None*
+   * - **API ID Path**: content_block.main_image
+   * - **Tab**: Main
+   * - **Documentation**: https://prismic.io/docs/field#image
+   */
+  main_image: prismic.ImageField<never>;
+
+  /**
+   * Body field in *Content Block*
+   *
+   * - **Field Type**: Rich Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: content_block.body
+   * - **Tab**: Main
+   * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+   */
+  body: prismic.RichTextField;
+}
+
+/**
+ * Content Block document from Prismic
+ *
+ * - **API ID**: `content_block`
+ * - **Repeatable**: `true`
+ * - **Documentation**: https://prismic.io/docs/custom-types
+ *
+ * @typeParam Lang - Language API ID of the document.
+ */
+export type ContentBlockDocument<Lang extends string = string> =
+  prismic.PrismicDocumentWithUID<
+    Simplify<ContentBlockDocumentData>,
+    "content_block",
+    Lang
+  >;
+
+/**
+ * Item in *Content Section → Content*
+ */
+export interface ContentSectionDocumentDataContentItem {
+  /**
+   * Block field in *Content Section → Content*
+   *
+   * - **Field Type**: Content Relationship
+   * - **Placeholder**: *None*
+   * - **API ID Path**: content_section.content[].block
+   * - **Documentation**: https://prismic.io/docs/field#link-content-relationship
+   */
+  block: prismic.ContentRelationshipField<"content_block">;
+}
+
+/**
+ * Content for Content Section documents
+ */
+interface ContentSectionDocumentData {
+  /**
+   * Section Title field in *Content Section*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: content_section.section_title
+   * - **Tab**: Main
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  section_title: prismic.KeyTextField;
+
+  /**
+   * Content field in *Content Section*
+   *
+   * - **Field Type**: Group
+   * - **Placeholder**: *None*
+   * - **API ID Path**: content_section.content[]
+   * - **Tab**: Main
+   * - **Documentation**: https://prismic.io/docs/field#group
+   */
+  content: prismic.GroupField<Simplify<ContentSectionDocumentDataContentItem>>;
+}
+
+/**
+ * Content Section document from Prismic
+ *
+ * - **API ID**: `content_section`
+ * - **Repeatable**: `true`
+ * - **Documentation**: https://prismic.io/docs/custom-types
+ *
+ * @typeParam Lang - Language API ID of the document.
+ */
+export type ContentSectionDocument<Lang extends string = string> =
+  prismic.PrismicDocumentWithUID<
+    Simplify<ContentSectionDocumentData>,
+    "content_section",
+    Lang
+  >;
+
+/**
  * Content for Feature documents
  */
 interface FeatureDocumentData {
@@ -927,7 +1039,8 @@ type SliceTestDocumentDataSlicesSlice =
   | BenefitsSlice
   | FeaturesCarouselSlice
   | ShowcaseSlice
-  | HowItWorksCarouselSlice;
+  | HowItWorksCarouselSlice
+  | StructuredContentCollectionSlice;
 
 /**
  * Content for Slice Test documents
@@ -1073,6 +1186,8 @@ export type AllDocumentTypes =
   | AuthorDocument
   | BlogCategoryDocument
   | BlogPostDocument
+  | ContentBlockDocument
+  | ContentSectionDocument
   | FeatureDocument
   | HomepageDocument
   | PageDocument
@@ -3070,6 +3185,89 @@ export type ShowcaseSlice = prismic.SharedSlice<
 >;
 
 /**
+ * Primary content in *StructuredContentCollection → Primary*
+ */
+export interface StructuredContentCollectionSliceDefaultPrimary {
+  /**
+   * Collection Heading field in *StructuredContentCollection → Primary*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: structured_content_collection.primary.collection_heading
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  collection_heading: prismic.KeyTextField;
+
+  /**
+   * Collection Subheading field in *StructuredContentCollection → Primary*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: structured_content_collection.primary.collection_subheading
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  collection_subheading: prismic.KeyTextField;
+
+  /**
+   * Show search field in *StructuredContentCollection → Primary*
+   *
+   * - **Field Type**: Boolean
+   * - **Placeholder**: *None*
+   * - **Default Value**: false
+   * - **API ID Path**: structured_content_collection.primary.show_search
+   * - **Documentation**: https://prismic.io/docs/field#boolean
+   */
+  show_search: prismic.BooleanField;
+}
+
+/**
+ * Primary content in *StructuredContentCollection → Items*
+ */
+export interface StructuredContentCollectionSliceDefaultItem {
+  /**
+   * Content Section field in *StructuredContentCollection → Items*
+   *
+   * - **Field Type**: Content Relationship
+   * - **Placeholder**: *None*
+   * - **API ID Path**: structured_content_collection.items[].content_section
+   * - **Documentation**: https://prismic.io/docs/field#link-content-relationship
+   */
+  content_section: prismic.ContentRelationshipField<"content_section">;
+}
+
+/**
+ * Default variation for StructuredContentCollection Slice
+ *
+ * - **API ID**: `default`
+ * - **Description**: Default
+ * - **Documentation**: https://prismic.io/docs/slice
+ */
+export type StructuredContentCollectionSliceDefault =
+  prismic.SharedSliceVariation<
+    "default",
+    Simplify<StructuredContentCollectionSliceDefaultPrimary>,
+    Simplify<StructuredContentCollectionSliceDefaultItem>
+  >;
+
+/**
+ * Slice variation for *StructuredContentCollection*
+ */
+type StructuredContentCollectionSliceVariation =
+  StructuredContentCollectionSliceDefault;
+
+/**
+ * StructuredContentCollection Shared Slice
+ *
+ * - **API ID**: `structured_content_collection`
+ * - **Description**: StructuredContentCollection
+ * - **Documentation**: https://prismic.io/docs/slice
+ */
+export type StructuredContentCollectionSlice = prismic.SharedSlice<
+  "structured_content_collection",
+  StructuredContentCollectionSliceVariation
+>;
+
+/**
  * Primary content in *Testimonials → Primary*
  */
 export interface TestimonialsSliceDefaultPrimary {
@@ -3186,6 +3384,10 @@ declare module "@prismicio/client" {
       BlogPostDocument,
       BlogPostDocumentData,
       BlogPostDocumentDataSlicesSlice,
+      ContentBlockDocument,
+      ContentBlockDocumentData,
+      ContentSectionDocument,
+      ContentSectionDocumentData,
       FeatureDocument,
       FeatureDocumentData,
       HomepageDocument,
@@ -3281,6 +3483,11 @@ declare module "@prismicio/client" {
       ShowcaseSliceRightShowcase,
       ShowcaseSliceLeftShowcaseWithIcons,
       ShowcaseSliceRightShowcaseWithIcons,
+      StructuredContentCollectionSlice,
+      StructuredContentCollectionSliceDefaultPrimary,
+      StructuredContentCollectionSliceDefaultItem,
+      StructuredContentCollectionSliceVariation,
+      StructuredContentCollectionSliceDefault,
       TestimonialsSlice,
       TestimonialsSliceDefaultPrimary,
       TestimonialsSliceDefaultItem,

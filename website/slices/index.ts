@@ -14,5 +14,8 @@ export const components = {
   pricing: dynamic(() => import("./Pricing")),
   road_map: dynamic(() => import("./RoadMap")),
   showcase: dynamic(() => import("./Showcase")),
+  structured_content_collection: dynamic(
+    () => import("./StructuredContentCollection")
+  ),
   testimonials: dynamic(() => import("./Testimonials")),
 };

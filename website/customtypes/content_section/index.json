@@ -1,0 +1,32 @@
+{
+  "id": "content_section",
+  "label": "Content Section",
+  "format": "custom",
+  "repeatable": true,
+  "status": true,
+  "json": {
+    "Main": {
+      "uid": { "config": { "label": "UID" }, "type": "UID" },
+      "section_title": {
+        "type": "Text",
+        "config": { "label": "Section Title", "placeholder": "" }
+      },
+      "content": {
+        "type": "Group",
+        "config": {
+          "label": "Content",
+          "fields": {
+            "block": {
+              "type": "Link",
+              "config": {
+                "label": "Block",
+                "select": "document",
+                "customtypes": ["content_block"]
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
