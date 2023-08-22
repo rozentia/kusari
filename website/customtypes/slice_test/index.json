@@ -14,7 +14,10 @@
         "type": "Slices",
         "fieldset": "Slice Zone",
         "config": {
-          "choices": { "community_testimonials": { "type": "SharedSlice" } }
+          "choices": {
+            "community_testimonials": { "type": "SharedSlice" },
+            "testimonials": { "type": "SharedSlice" }
+          }
         }
       }
     },

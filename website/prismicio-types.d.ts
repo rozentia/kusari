@@ -915,7 +915,9 @@ export type SettingsDocument<Lang extends string = string> =
     Lang
   >;
 
-type SliceTestDocumentDataSlicesSlice = CommunityTestimonialsSlice;
+type SliceTestDocumentDataSlicesSlice =
+  | CommunityTestimonialsSlice
+  | TestimonialsSlice;
 
 /**
  * Content for Slice Test documents
@@ -2929,12 +2931,12 @@ export interface TestimonialsSliceDefaultPrimary {
   /**
    * Heading field in *Testimonials → Primary*
    *
-   * - **Field Type**: Title
+   * - **Field Type**: Text
    * - **Placeholder**: *None*
    * - **API ID Path**: testimonials.primary.heading
-   * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+   * - **Documentation**: https://prismic.io/docs/field#key-text
    */
-  heading: prismic.TitleField;
+  heading: prismic.KeyTextField;
 
   /**
    * Tag Line field in *Testimonials → Primary*
