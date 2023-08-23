@@ -6,6 +6,9 @@ import { Metadata } from "next";
 import { code, grotesk, nunito, sora } from "@/common/style/fonts";
 
 import { kBodyStyle } from "@/constants/classNames";
+import Layout from "@/components/Layout";
+import Header from "@/components/Header";
+import Footer from "@/components/Footer";
 
 //: https://nextjs.org/docs/app/api-reference/functions/generate-metadata
 export async function generateMetadata(): Promise<Metadata> {
@@ -35,9 +38,7 @@ export async function generateMetadata(): Promise<Metadata> {
     }
 }
 
-export default function RootLayout({
-    children,
-}: {
+export default function RootLayout({children}: {
     children: React.ReactNode;
 }) {
     return (
@@ -53,7 +54,11 @@ export default function RootLayout({
             <body
                 className={`${sora.variable} ${code.variable} ${grotesk.variable} ${kBodyStyle}`}
             >
-                {children}
+                <div className="pt-[4.75rem] lg:pt-[5.25rem] overflow-hidden">
+                    <Header />
+                        {children}
+                    <Footer />
+                </div>
                 <svg className="block" width={0} height={0}>
                     <defs>
                         <linearGradient

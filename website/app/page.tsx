@@ -1,8 +1,26 @@
-import type { NextPage } from "next";
-import HomePage from "@/templates/HomePage";
+import { Metadata } from "next";
+import { SliceZone } from "@prismicio/react";
 
-const Home: NextPage = () => {
-    return <HomePage />;
-};
+import { createClient } from "@/prismicio";
+import { components } from "@/slices";
+import HomepageHero from "@/components/HomepageHero";
 
-export default Home;
+export default async function Page() {
+  const client = createClient();
+  const page = await client.getSingle("homepage");
+
+  return (<>
+    <HomepageHero />
+    <SliceZone slices={page.data.slices} components={components} />
+  </>);
+}
+
+export async function generateMetadata(): Promise<Metadata> {
+  const client = createClient();
+  const page = await client.getSingle("homepage");
+
+  return {
+    title: page.data.meta_title,
+    description: page.data.meta_description,
+  };
+}

@@ -6,27 +6,22 @@ export const navigation = [
     },
     {
         id: "1",
-        title: "Pricing",
-        url: "/pricing",
-    },
-    {
-        id: "2",
-        title: "How to use",
-        url: "/how-to-use",
-    },
-    {
-        id: "3",
         title: "Roadmap",
         url: "/roadmap",
     },
     {
-        id: "4",
+        id: "2",
+        title: "About Us",
+        url: "/about",
+    },
+    {
+        id: "3",
         title: "New account",
         url: "/login?new=true",
         onlyMobile: true,
     },
     {
-        id: "5",
+        id: "4",
         title: "Sign in",
         url: "/login",
         onlyMobile: true,

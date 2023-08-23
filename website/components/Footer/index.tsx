@@ -1,14 +1,19 @@
-import Link from "next/link";
 import Section from "../Section";
 import Logo from "../Logo";
 import Image from "../Image";
 
-import { navigation } from "@/constants/navigation";
 import { socials } from "@/constants/socials";
+import { PrismicNextLink } from "@prismicio/next";
+import { isFilled } from "@prismicio/client";
+import { createClient } from "@/prismicio";
+import { compact } from "lodash";
 
-type FooterProps = {};
 
-const Footer = ({}: FooterProps) => (
+const Footer = async () => {
+    const client = createClient()
+    const settings = await client.getSingle('settings')
+    const navigation = compact([...settings.data.footer_navigation])
+    return (
     <Section
         className="pt-11 pb-6 px-5 lg:pt-[6.5rem] lg:px-7.5 lg:pb-12 xl:px-10"
         crosses
@@ -17,14 +22,14 @@ const Footer = ({}: FooterProps) => (
         <div className="flex items-center justify-center h-[6.5rem] mb-6 border-b border-n-6 lg:justify-start">
             <Logo />
             <nav className="hidden lg:flex items-center justify-center ml-auto">
-                {navigation.slice(0, -1).map((item) => (
-                    <Link
+                {navigation.map(({link, label}, index) => isFilled.link(link) && (
+                    <PrismicNextLink
+                        field={link}
                         className={`px-12 py-8 font-code text-xs font-semibold leading-5 uppercase text-n-1/50 transition-colors hover:text-n-1`}
-                        href={item.url}
-                        key={item.id}
+                        key={index}
                     >
-                        {item.title}
-                    </Link>
+                        {label}
+                    </PrismicNextLink>
                 ))}
             </nav>
         </div>
@@ -51,6 +56,6 @@ const Footer = ({}: FooterProps) => (
             </div>
         </div>
     </Section>
-);
+)};
 
 export default Footer;

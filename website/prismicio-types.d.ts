@@ -87,6 +87,28 @@ interface AuthorDocumentData {
   position: prismic.KeyTextField;
 
   /**
+   * Brief Bio field in *Author*
+   *
+   * - **Field Type**: Rich Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: author.brief_bio
+   * - **Tab**: Main
+   * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+   */
+  brief_bio: prismic.RichTextField;
+
+  /**
+   * Long Bio field in *Author*
+   *
+   * - **Field Type**: Rich Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: author.long_bio
+   * - **Tab**: Main
+   * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+   */
+  long_bio: prismic.RichTextField;
+
+  /**
    * Networks field in *Author*
    *
    * - **Field Type**: Group
@@ -480,7 +502,17 @@ export type FeatureDocument<Lang extends string = string> =
 type HomepageDocumentDataSlicesSlice =
   | HeroSlice
   | FeaturesSlice
-  | TestimonialsSlice;
+  | TestimonialsSlice
+  | FaqSlice
+  | CollaborationSlice
+  | PricingSlice
+  | RoadMapSlice
+  | BenefitsSlice
+  | CommunityTestimonialsSlice
+  | StructuredContentCollectionSlice
+  | HowItWorksCarouselSlice
+  | FeaturesCarouselSlice
+  | ShowcaseSlice;
 
 /**
  * Content for Homepage documents
@@ -560,7 +592,17 @@ export type HomepageDocument<Lang extends string = string> =
 type PageDocumentDataSlicesSlice =
   | FeaturesSlice
   | TestimonialsSlice
-  | HeroSlice;
+  | HeroSlice
+  | FaqSlice
+  | CollaborationSlice
+  | PricingSlice
+  | RoadMapSlice
+  | StructuredContentCollectionSlice
+  | CommunityTestimonialsSlice
+  | BenefitsSlice
+  | FeaturesCarouselSlice
+  | HowItWorksCarouselSlice
+  | ShowcaseSlice;
 
 /**
  * Content for Page documents

@@ -17,7 +17,17 @@
           "choices": {
             "hero": { "type": "SharedSlice" },
             "features": { "type": "SharedSlice" },
-            "testimonials": { "type": "SharedSlice" }
+            "testimonials": { "type": "SharedSlice" },
+            "faq": { "type": "SharedSlice" },
+            "collaboration": { "type": "SharedSlice" },
+            "pricing": { "type": "SharedSlice" },
+            "road_map": { "type": "SharedSlice" },
+            "benefits": { "type": "SharedSlice" },
+            "community_testimonials": { "type": "SharedSlice" },
+            "structured_content_collection": { "type": "SharedSlice" },
+            "how_it_works_carousel": { "type": "SharedSlice" },
+            "features_carousel": { "type": "SharedSlice" },
+            "showcase": { "type": "SharedSlice" }
           }
         }
       }

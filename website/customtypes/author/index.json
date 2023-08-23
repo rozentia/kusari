@@ -23,6 +23,24 @@
         "type": "Text",
         "config": { "label": "Position", "placeholder": "" }
       },
+      "brief_bio": {
+        "type": "StructuredText",
+        "config": {
+          "label": "Brief Bio",
+          "placeholder": "",
+          "allowTargetBlank": true,
+          "multi": "paragraph,strong,em,hyperlink"
+        }
+      },
+      "long_bio": {
+        "type": "StructuredText",
+        "config": {
+          "label": "Long Bio",
+          "placeholder": "",
+          "allowTargetBlank": true,
+          "multi": "paragraph,strong,em,hyperlink"
+        }
+      },
       "networks": {
         "type": "Group",
         "config": {

@@ -1,3 +1,5 @@
+"use client"
+
 import { useEffect, useState } from "react";
 import { usePathname, useSearchParams } from "next/navigation";
 import Link from "next/link";
@@ -42,7 +44,7 @@ const Header = ({}: HeaderProps) => {
                 openNavigation ? "bg-n-8" : " bg-n-8/90 backdrop-blur-sm"
             } border-b border-n-6 lg:bg-n-8/90 lg:backdrop-blur-sm`}
         >
-            <div className={`flex items-center h-[4.75rem] px-5 lg:h-[5.25rem] lg:px-7.5 xl:px-10`}>
+            <div className="flex items-center h-[4.75rem] px-5 lg:h-[5.25rem] lg:px-7.5 xl:px-10">
                 <Logo className="xl:mr-8" />
                 <nav
                     className={`${
