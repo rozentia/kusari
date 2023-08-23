@@ -2,31 +2,43 @@ export const socials = [
     {
         id: "0",
         title: "Discord",
-        iconUrl: "/images/socials/discord.svg",
+        iconName: "BiLogoDiscordAlt",
         url: "#",
     },
     {
         id: "1",
         title: "Twitter",
-        iconUrl: "/images/socials/twitter.svg",
+        iconName: "BiLogoTwitter",
         url: "#",
     },
     {
         id: "2",
         title: "Instagram",
-        iconUrl: "/images/socials/instagram.svg",
+        iconName: "BiLogoInstagramAlt",
         url: "#",
     },
     {
         id: "3",
         title: "Telegram",
-        iconUrl: "/images/socials/telegram.svg",
+        iconName: "BiLogoTelegram",
         url: "#",
     },
     {
         id: "4",
         title: "Facebook",
-        iconUrl: "/images/socials/facebook.svg",
+        iconName: "BiLogoFacebook",
+        url: "#",
+    },
+    {
+        id: "4",
+        title: "YouTube",
+        iconName: "BiLogoYoutube",
+        url: "#",
+    },
+    {
+        id: "4",
+        title: "LinkedIn",
+        iconName: "BiLogoLinkedin",
         url: "#",
     },
 ];
