@@ -1,17 +1,17 @@
 "use client"
-import { Content } from "@prismicio/client";
 import { PrismicRichText } from "@prismicio/react";
 
 import { Splide, SplideSlide, SplideTrack } from "@splidejs/react-splide";
 import { sequenceBy } from "@/common/util/math";
 import Icon from "@/components/Icon";
 import { useRef, useState } from "react";
+import { FeaturesSliceFeaturesGridItem } from "@/prismicio-types";
 
 /**
  * Props for `FeaturesGridSlice`.
  */
 export type FeaturesGridProps = {
-    items: Content.FeaturesSliceFeaturesGridItem[]
+    items: FeaturesSliceFeaturesGridItem[]
 }
 
 /**

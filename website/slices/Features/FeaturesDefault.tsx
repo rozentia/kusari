@@ -7,6 +7,7 @@ import { JSXMapSerializer, PrismicRichText, SliceComponentProps } from "@prismic
 import { Splide, SplideSlide, SplideTrack } from "@splidejs/react-splide";
 import { sequenceBy } from "@/common/util/math";
 import Icon from "@/components/Icon";
+import { FeaturesSliceDefaultItem } from "@/prismicio-types";
 
 const components: JSXMapSerializer = {
   paragraph: ({children}) => <p className="body-2 mb-6 text-n-3">{children}</p>
@@ -16,7 +17,7 @@ const components: JSXMapSerializer = {
  * Props for `Benefits`.
  */
 export type FeaturesDefaultProps = {
-    items: Content.FeaturesSliceDefaultItem[]
+    items: FeaturesSliceDefaultItem[]
 }
 
 /**
