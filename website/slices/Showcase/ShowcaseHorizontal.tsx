@@ -1,16 +1,15 @@
-import { Content } from "@prismicio/client";
 import { PrismicRichText, SliceComponentProps } from "@prismicio/react";
-import { ShowcaseSliceLeftShowcasePrimary } from '../../prismicio-types';
 import Section from "@/components/Section";
 import Image from "@/components/Image"
 import { PrismicNextImage } from "@prismicio/next";
+import { ShowcaseSliceLeftShowcaseItem, ShowcaseSliceLeftShowcasePrimary, ShowcaseSliceRightShowcaseItem, ShowcaseSliceRightShowcasePrimary } from "@/prismicio-types";
 
 /**
  * Props for `ShowcaseHorizontal`.
  */
 export type ShowcaseHorizontalProps = {
-    data: Content.ShowcaseSliceLeftShowcasePrimary | Content.ShowcaseSliceRightShowcasePrimary
-    items: Content.ShowcaseSliceLeftShowcaseItem[] | Content.ShowcaseSliceRightShowcaseItem[]
+    data: ShowcaseSliceLeftShowcasePrimary | ShowcaseSliceRightShowcasePrimary
+    items: ShowcaseSliceLeftShowcaseItem[] | ShowcaseSliceRightShowcaseItem[]
     isLeft: boolean
 };
 /**

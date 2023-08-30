@@ -2,16 +2,16 @@ import Button from "@/components/Button";
 import Section from "@/components/Section";
 import Image from "@/components/Image";
 import { kBodyStyle } from "@/constants/classNames";
-import { Content } from "@prismicio/client";
 import { PrismicNextLink } from "@prismicio/next";
 import { JSXMapSerializer, PrismicRichText, SliceComponentProps } from "@prismicio/react";
 import { apps } from "@/mocks/collaboration";
+import { CollaborationSlice } from "@/prismicio-types";
 
 /**
  * Props for `Collaboration`.
  */
 export type CollaborationProps =
-  SliceComponentProps<Content.CollaborationSlice>;
+  SliceComponentProps<CollaborationSlice>;
 
 /**
  * Component for "Collaboration" Slices.

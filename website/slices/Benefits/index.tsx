@@ -2,7 +2,6 @@
 
 import { useRef, useState } from "react";
 import { kBodyStyle } from "@/constants/classNames";
-import { Content } from "@prismicio/client";
 import { PrismicNextImage, PrismicNextLink } from "@prismicio/next";
 import { JSXMapSerializer, PrismicRichText, SliceComponentProps } from "@prismicio/react";
 import Section from "@/components/Section";
@@ -10,6 +9,7 @@ import Heading from "@/components/Heading";
 import { Splide, SplideSlide, SplideTrack } from "@splidejs/react-splide";
 import { sequenceBy } from "@/common/util/math";
 import Icon from "@/components/Icon";
+import { BenefitsSlice } from "@/prismicio-types";
 
 const components: JSXMapSerializer = {
   paragraph: ({children}) => <p className="body-2 mb-6 text-n-3">{children}</p>
@@ -19,7 +19,7 @@ const components: JSXMapSerializer = {
  * Props for `Benefits`.
  */
 export type BenefitsProps =
-  SliceComponentProps<Content.BenefitsSlice>;
+  SliceComponentProps<BenefitsSlice>;
 
 /**
  * Component for "Benefits" Slices.

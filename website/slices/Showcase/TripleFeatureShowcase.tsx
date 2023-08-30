@@ -1,17 +1,18 @@
 import Heading from "@/components/Heading";
 import Section from "@/components/Section";
 import Image from "@/components/Image"
-import { Content, isFilled } from "@prismicio/client";
+import { isFilled } from "@prismicio/client";
 import { PrismicRichText } from "@prismicio/react";
 import { PrismicNextImage } from "@prismicio/next";
+import { ShowcaseSliceTripleFeatureShowcaseItem, ShowcaseSliceTripleFeatureShowcasePrimary } from "@/prismicio-types";
 
 /**
  * Props for `TripleFeatureShowcase`.
  */
 export type TripleFeatureShowcaseProps = {
     containerClassName?: string
-    data: Content.ShowcaseSliceTripleFeatureShowcasePrimary
-    items: Content.ShowcaseSliceTripleFeatureShowcaseItem[]
+    data: ShowcaseSliceTripleFeatureShowcasePrimary
+    items: ShowcaseSliceTripleFeatureShowcaseItem[]
 };
 /**
  * Component for "TripleFeatureShowcase" Slices.

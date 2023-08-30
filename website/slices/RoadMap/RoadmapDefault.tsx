@@ -2,19 +2,19 @@ import Heading from "@/components/Heading";
 import Section from "@/components/Section";
 import Image from "@/components/Image"
 import { kBodyStyle } from "@/constants/classNames";
-import { Content } from "@prismicio/client";
 import { PrismicRichText, SliceComponentProps } from "@prismicio/react";
 import Tagline from "@/components/Tagline";
 import Button from "@/components/Button";
 import dayjs from "dayjs";
 import { PrismicNextImage, PrismicNextLink } from "@prismicio/next";
+import { RoadMapSliceDefaultItem, RoadMapSliceDefaultPrimary } from "@/prismicio-types";
 
 /**
  * Props for `RoadMapDefault`.
  */
 export type RoadMapDefaultProps = {
-    items: Content.RoadMapSliceDefaultItem[]
-    data: Content.RoadMapSliceDefaultPrimary
+    items: RoadMapSliceDefaultItem[]
+    data: RoadMapSliceDefaultPrimary
 };
 
 /**

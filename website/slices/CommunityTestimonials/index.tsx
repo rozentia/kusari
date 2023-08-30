@@ -2,17 +2,18 @@ import Heading from "@/components/Heading"
 import Section from "@/components/Section"
 import Image from "@/components/Image"
 import { kBodyStyle } from "@/constants/classNames"
-import { Content, isFilled } from "@prismicio/client"
+import { isFilled } from "@prismicio/client"
 import { SliceComponentProps } from "@prismicio/react"
 import Grid from "./Grid"
 import Carousel from "./Carousel"
 import { createClient } from "@/prismicio"
+import { CommunityTestimonialsSlice } from "@/prismicio-types"
 
 /**
  * Props for `CommunityTestimonials`.
  */
 export type CommunityTestimonialsProps =
-  SliceComponentProps<Content.CommunityTestimonialsSlice>
+  SliceComponentProps<CommunityTestimonialsSlice>
 
 /**
  * Component for "CommunityTestimonials" Slices.

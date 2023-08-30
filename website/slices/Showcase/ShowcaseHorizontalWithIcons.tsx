@@ -1,17 +1,18 @@
 import Section from "@/components/Section";
-import { Content, isFilled } from "@prismicio/client";
+import { isFilled } from "@prismicio/client";
 import Image from "@/components/Image"
 import { PrismicRichText, SliceComponentProps } from "@prismicio/react";
 import { PrismicNextImage } from "@prismicio/next";
 import Icon from "@/components/Icon";
 import { kDefaultIconColor } from "@/common/style/colors";
+import { ShowcaseSliceLeftShowcaseWithIconsItem, ShowcaseSliceLeftShowcaseWithIconsPrimary, ShowcaseSliceRightShowcaseWithIconsItem, ShowcaseSliceRightShowcaseWithIconsPrimary } from "@/prismicio-types";
 
 /**
  * Props for `ShowcaseHorizontalWithIcons`.
  */
 export type ShowcaseHorizontalWithIconsProps = {
-    data: Content.ShowcaseSliceRightShowcaseWithIconsPrimary | Content.ShowcaseSliceLeftShowcaseWithIconsPrimary
-    items: Content.ShowcaseSliceRightShowcaseWithIconsItem[] | Content.ShowcaseSliceLeftShowcaseWithIconsItem[]
+    data: ShowcaseSliceRightShowcaseWithIconsPrimary | ShowcaseSliceLeftShowcaseWithIconsPrimary
+    items: ShowcaseSliceRightShowcaseWithIconsItem[] | ShowcaseSliceLeftShowcaseWithIconsItem[]
     isLeft: boolean
 };
 /**

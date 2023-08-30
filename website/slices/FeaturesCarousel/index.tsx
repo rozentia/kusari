@@ -5,18 +5,18 @@ import Button from "@/components/Button";
 import Section from "@/components/Section";
 import Notification from "@/components/Notification"
 import { kBodyStyle } from "@/constants/classNames";
-import { Content } from "@prismicio/client";
 import { PrismicNextImage, PrismicNextLink } from "@prismicio/next";
 import { PrismicRichText, SliceComponentProps } from "@prismicio/react";
 import { Splide, SplideSlide, SplideTrack } from "@splidejs/react-splide";
 import { useRef } from "react";
 import Icon from "@/components/Icon";
+import { FeaturesCarouselSlice } from "@/prismicio-types";
 
 /**
  * Props for `FeaturesCarousel`.
  */
 export type FeaturesCarouselProps =
-  SliceComponentProps<Content.FeaturesCarouselSlice>;
+  SliceComponentProps<FeaturesCarouselSlice>;
 
 /**
  * Component for "FeaturesCarousel" Slices.

@@ -1,15 +1,15 @@
 import Section from "@/components/Section";
 import Image from "@/components/Image"
-import { Content } from "@prismicio/client";
 import { PrismicRichText, SliceComponentProps } from "@prismicio/react";
 import { PrismicNextLink } from "@prismicio/next";
 import Button from "@/components/Button";
+import { ShowcaseSliceDefaultPrimary } from "@/prismicio-types";
 
 /**
  * Props for `ShowcaseDefault`.
  */
 export type ShowcaseDefaultProps = {
- data: Content.ShowcaseSliceDefaultPrimary
+ data: ShowcaseSliceDefaultPrimary
 };
 
 /**

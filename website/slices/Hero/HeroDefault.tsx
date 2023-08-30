@@ -1,6 +1,5 @@
 import Section from "@/components/Section";
 import Image from "@/components/Image"
-import { kBodyStyle } from "@/constants/classNames";
 import { PrismicNextImage, PrismicNextLink } from "@prismicio/next";
 import { JSXMapSerializer, PrismicRichText, SliceComponentProps } from "@prismicio/react";
 import Button from "@/components/Button";

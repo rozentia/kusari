@@ -2,7 +2,7 @@
 
 import Section from "@/components/Section";
 import Image from "@/components/Image"
-import { Content, isFilled } from "@prismicio/client";
+import { isFilled } from "@prismicio/client";
 import { PrismicNextImage } from "@prismicio/next";
 import Heading from "@/components/Heading";
 import { useState } from "react";
@@ -10,14 +10,15 @@ import { first } from "lodash";
 import ScrollIntoView from "react-scroll-into-view";
 import Tagline from "@/components/Tagline";
 import { PrismicRichText } from "@prismicio/react";
+import { ContentBlockDocument, ContentSectionDocument, StructuredContentCollectionSliceDefaultPrimary } from "@/prismicio-types";
 
 /**
  * Props for `StructuredContent`.
  */
 export type StructuredContentProps = {
-    data: Content.StructuredContentCollectionSliceDefaultPrimary
-    sections: Content.ContentSectionDocument<string>[]
-    content: Content.ContentBlockDocument<string>[]
+    data: StructuredContentCollectionSliceDefaultPrimary
+    sections: ContentSectionDocument<string>[]
+    content: ContentBlockDocument<string>[]
 };
 
 /**
@@ -27,7 +28,7 @@ const StructuredContent = ({data,  sections, content }: StructuredContentProps):
     const [openNavigation, setOpenNavigation] = useState<boolean>(false);
     const [openGroupId, setOpenGroudId] = useState<string | null>("g0");
 
-    const getBlockByUID = (uid: string): Content.ContentBlockDocument<string> | undefined => 
+    const getBlockByUID = (uid: string): ContentBlockDocument<string> | undefined => 
         first(content.filter((block) => block.uid == uid)) 
 
     return (
