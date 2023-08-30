@@ -1,17 +1,17 @@
 "use client"
 
 import Section from "@/components/Section";
-import { Content } from "@prismicio/client";
 import { PrismicRichText } from "@prismicio/react";
 import { PrismicNextImage } from "@prismicio/next";
 import { useRef, useState } from "react";
 import { Splide, SplideSlide } from "@splidejs/react-splide";
+import { TestimonialDocument } from "@/prismicio-types";
 
 /**
  * Props for `TestimonialsQuoteSlideshow`.
  */
 export type TestimonialsQuoteSlideshowProps = {
- testimonials: Content.TestimonialDocument<string>[]
+ testimonials: TestimonialDocument<string>[]
 };
 
 /**

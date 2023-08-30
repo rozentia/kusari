@@ -1,15 +1,15 @@
 import Section from "@/components/Section";
 import Image from "@/components/Image"
-import { Content } from "@prismicio/client";
 import { PrismicRichText, SliceComponentProps } from "@prismicio/react";
 import Tagline from "@/components/Tagline";
 import dayjs from "dayjs";
+import { RoadMapSliceDetailItem } from "@/prismicio-types";
 
 /**
  * Props for `RoadMapDetail`.
  */
 export type RoadMapDetailProps = {
-    items: Content.RoadMapSliceDetailItem[]
+    items: RoadMapSliceDetailItem[]
 };
 
 /**

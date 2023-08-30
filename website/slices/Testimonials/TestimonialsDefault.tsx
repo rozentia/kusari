@@ -2,20 +2,21 @@
 
 import Section from "@/components/Section";
 import Image from "@/components/Image"
-import { Content, isFilled } from "@prismicio/client";
+import { isFilled } from "@prismicio/client";
 import { PrismicRichText, SliceComponentProps } from "@prismicio/react";
 import { PrismicNextLink } from "@prismicio/next";
 import Button from "@/components/Button";
 import Heading from "@/components/Heading";
 import { Splide, SplideSlide, SplideTrack } from "@splidejs/react-splide";
 import Arrows from "@/components/Arrows";
+import { TestimonialDocument, TestimonialsSliceDefaultPrimary } from "@/prismicio-types";
 
 /**
  * Props for `TestimonialsDefault`.
  */
 export type TestimonialsDefaultProps = {
- data: Content.TestimonialsSliceDefaultPrimary
- testimonials: Content.TestimonialDocument<string>[]
+ data: TestimonialsSliceDefaultPrimary
+ testimonials: TestimonialDocument<string>[]
 };
 
 /**
