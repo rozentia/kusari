@@ -8,10 +8,18 @@ import Image from "@/components/Image";
 import Generating from "@/components/Generating";
 import Notification from "@/components/Notification";
 import Logos from "@/components/Logos";
+import { LinkField } from "@prismicio/client";
+import { PrismicNextLink } from '@prismicio/next';
 
-type HeroProps = {};
+type HeroProps = {
+    title: string
+    titleHighlight: string
+    tagline: string
+    buttonLabel: string
+    buttonLink: LinkField
+};
 
-const HomepageHero = ({}: HeroProps) => {
+const HomepageHero = ({ title, titleHighlight, tagline, buttonLabel, buttonLink}: HeroProps) => {
     const [mounted, setMounted] = useState<boolean>(false);
 
     useEffect(() => {
@@ -30,9 +38,9 @@ const HomepageHero = ({}: HeroProps) => {
             <div className="container relative" ref={parallaxRef}>
                 <div className="relative z-1 max-w-[62rem] mx-auto mb-[3.875rem] text-center md:mb-20 lg:mb-[6.25rem]">
                     <h1 className="h1 mb-6">
-                        Explore the Possibilities of&nbsp;AI&nbsp;Chatting with{" "}
+                        {title}
                         <span className="inline-block relative">
-                            Kusari
+                            {titleHighlight}
                             <Image
                                 className="absolute top-full left-0 w-full xl:-mt-2"
                                 src="/images/curve.png"
@@ -43,11 +51,14 @@ const HomepageHero = ({}: HeroProps) => {
                         </span>
                     </h1>
                     <p className="body-1 max-w-3xl mx-auto mb-6 text-n-2 lg:mb-8">
-                        Unleash the power of AI within Kusari. Upgrade your
-                        productivity with Kusari, the open AI chat app.
+                        {tagline}
                     </p>
-                    <Button href="/pricing" white>
-                        Get started
+                    <Button white>
+                        <PrismicNextLink
+                            field={buttonLink}
+                        >
+                            {buttonLabel}
+                        </PrismicNextLink>
                     </Button>
                 </div>
                 <div className="relative max-w-[23.25rem] mx-auto md:max-w-5xl xl:mb-24">

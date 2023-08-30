@@ -530,6 +530,50 @@ interface HomepageDocumentData {
   title: prismic.KeyTextField;
 
   /**
+   * Title Highlight field in *Homepage*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: homepage.title_highlight
+   * - **Tab**: Main
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  title_highlight: prismic.KeyTextField;
+
+  /**
+   * Tagline field in *Homepage*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: homepage.tagline
+   * - **Tab**: Main
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  tagline: prismic.KeyTextField;
+
+  /**
+   * Button Link field in *Homepage*
+   *
+   * - **Field Type**: Link
+   * - **Placeholder**: *None*
+   * - **API ID Path**: homepage.button_link
+   * - **Tab**: Main
+   * - **Documentation**: https://prismic.io/docs/field#link-content-relationship
+   */
+  button_link: prismic.LinkField;
+
+  /**
+   * Button Label field in *Homepage*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: homepage.button_label
+   * - **Tab**: Main
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  button_label: prismic.KeyTextField;
+
+  /**
    * Slice Zone field in *Homepage*
    *
    * - **Field Type**: Slice Zone
@@ -3449,75 +3493,41 @@ declare module "@prismicio/client" {
       TestimonialDocumentData,
       AllDocumentTypes,
       BenefitsSlice,
-      BenefitsSliceDefaultPrimary,
-      BenefitsSliceDefaultItem,
       BenefitsSliceVariation,
       BenefitsSliceDefault,
       CollaborationSlice,
-      CollaborationSliceDefaultPrimary,
-      CollaborationSliceDefaultItem,
       CollaborationSliceVariation,
       CollaborationSliceDefault,
       CommunityTestimonialsSlice,
-      CommunityTestimonialsSliceDefaultPrimary,
-      CommunityTestimonialsSliceDefaultItem,
       CommunityTestimonialsSliceVariation,
       CommunityTestimonialsSliceDefault,
       FaqSlice,
-      FaqSliceDefaultPrimary,
-      FaqSliceDefaultItem,
       FaqSliceVariation,
       FaqSliceDefault,
       FeaturesSlice,
-      FeaturesSliceDefaultPrimary,
-      FeaturesSliceDefaultItem,
-      FeaturesSliceFeaturesGridItem,
       FeaturesSliceVariation,
       FeaturesSliceDefault,
       FeaturesSliceFeaturesGrid,
       FeaturesCarouselSlice,
-      FeaturesCarouselSliceDefaultItem,
       FeaturesCarouselSliceVariation,
       FeaturesCarouselSliceDefault,
       HeroSlice,
-      HeroSliceDefaultPrimary,
-      HeroSliceHorizontalPrimary,
-      HeroSliceVerticalPrimary,
       HeroSliceVariation,
       HeroSliceDefault,
       HeroSliceHorizontal,
       HeroSliceVertical,
       HowItWorksCarouselSlice,
-      HowItWorksCarouselSliceDefaultItem,
       HowItWorksCarouselSliceVariation,
       HowItWorksCarouselSliceDefault,
       PricingSlice,
-      PricingSliceDefaultPrimary,
-      PricingSliceDefaultItem,
-      PricingSliceDetailedPrimary,
-      PricingSliceDetailedItem,
       PricingSliceVariation,
       PricingSliceDefault,
       PricingSliceDetailed,
       RoadMapSlice,
-      RoadMapSliceDefaultPrimary,
-      RoadMapSliceDefaultItem,
-      RoadMapSliceDetailItem,
       RoadMapSliceVariation,
       RoadMapSliceDefault,
       RoadMapSliceDetail,
       ShowcaseSlice,
-      ShowcaseSliceDefaultPrimary,
-      ShowcaseSliceTripleFeatureShowcasePrimary,
-      ShowcaseSliceTripleFeatureShowcaseItem,
-      ShowcaseSliceLeftShowcasePrimary,
-      ShowcaseSliceLeftShowcaseItem,
-      ShowcaseSliceRightShowcasePrimary,
-      ShowcaseSliceRightShowcaseItem,
-      ShowcaseSliceLeftShowcaseWithIconsPrimary,
-      ShowcaseSliceLeftShowcaseWithIconsItem,
-      ShowcaseSliceRightShowcaseWithIconsPrimary,
-      ShowcaseSliceRightShowcaseWithIconsItem,
       ShowcaseSliceVariation,
       ShowcaseSliceDefault,
       ShowcaseSliceTripleFeatureShowcase,
@@ -3526,14 +3536,9 @@ declare module "@prismicio/client" {
       ShowcaseSliceLeftShowcaseWithIcons,
       ShowcaseSliceRightShowcaseWithIcons,
       StructuredContentCollectionSlice,
-      StructuredContentCollectionSliceDefaultPrimary,
-      StructuredContentCollectionSliceDefaultItem,
       StructuredContentCollectionSliceVariation,
       StructuredContentCollectionSliceDefault,
       TestimonialsSlice,
-      TestimonialsSliceDefaultPrimary,
-      TestimonialsSliceDefaultItem,
-      TestimonialsSliceQuoteSlideshowItem,
       TestimonialsSliceVariation,
       TestimonialsSliceDefault,
       TestimonialsSliceQuoteSlideshow,

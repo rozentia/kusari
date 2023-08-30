@@ -8,9 +8,22 @@ import HomepageHero from "@/components/HomepageHero";
 export default async function Page() {
   const client = createClient();
   const page = await client.getSingle("homepage");
+  const {
+    title,
+    title_highlight,
+    tagline,
+    button_link,
+    button_label,
+  } = page.data
 
   return (<>
-    <HomepageHero />
+    <HomepageHero
+      title={title || "Explore the Possibilities of "}
+      titleHighlight={title_highlight || "Kusari"}
+      tagline={tagline || "Unleash the power of Kusari and upgrade your productivity to the next level."}
+      buttonLink={button_link}
+      buttonLabel={button_label || "Get Started"}
+    />
     <SliceZone slices={page.data.slices} components={components} />
   </>);
 }
