@@ -1,16 +1,16 @@
 "use client"
 
 import { kBodyStyle } from "@/constants/classNames";
-import { Content } from "@prismicio/client";
 import { SliceComponentProps } from "@prismicio/react";
 import HeroDefault from "./HeroDefault";
 import HeroHorizontal from "./HeroHorizontal";
 import HeroVertical from "./HeroVertical";
+import { HeroSlice } from "@/prismicio-types";
 
 /**
  * Props for `Hero`.
  */
-export type HeroProps = SliceComponentProps<Content.HeroSlice>;
+export type HeroProps = SliceComponentProps<HeroSlice>;
 
 /**
  * Component for "Hero" Slices.

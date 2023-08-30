@@ -1,16 +1,15 @@
 import { kBodyStyle } from "@/constants/classNames";
-import { Content } from "@prismicio/client";
-import { PrismicNextImage, PrismicNextLink } from "@prismicio/next";
-import { JSXMapSerializer, PrismicRichText, SliceComponentProps } from "@prismicio/react";
+import { SliceComponentProps } from "@prismicio/react";
 import Section from "@/components/Section";
 import Heading from "@/components/Heading";
 import FeaturesDefaultSlice from "./FeaturesDefault";
 import FeaturesGridSlice from "./FeaturesGrid";
+import { FeaturesSlice } from "@/prismicio-types";
 
 /**
  * Props for `Features`.
  */
-export type FeaturesProps = SliceComponentProps<Content.FeaturesSlice>;
+export type FeaturesProps = SliceComponentProps<FeaturesSlice>;
 
 /**
  * Component for "Features" Slices.

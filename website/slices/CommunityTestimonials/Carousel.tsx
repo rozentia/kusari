@@ -3,10 +3,10 @@
 import { useRef, useState } from "react";
 import { Splide, SplideTrack, SplideSlide } from "@splidejs/react-splide";
 import Comment from "./Comment";
-import { Content } from "@prismicio/client";
+import { TestimonialDocument } from "@/prismicio-types";
 
 type CarouselProps = {
-    items: (Content.TestimonialDocument<string> | undefined)[];
+    items: (TestimonialDocument<string> | undefined)[];
 };
 
 const Carousel = ({ items }: CarouselProps) => {

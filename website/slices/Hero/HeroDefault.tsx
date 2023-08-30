@@ -1,16 +1,16 @@
 import Section from "@/components/Section";
 import Image from "@/components/Image"
 import { kBodyStyle } from "@/constants/classNames";
-import { Content } from "@prismicio/client";
 import { PrismicNextImage, PrismicNextLink } from "@prismicio/next";
 import { JSXMapSerializer, PrismicRichText, SliceComponentProps } from "@prismicio/react";
 import Button from "@/components/Button";
+import { HeroSliceDefaultPrimary } from "@/prismicio-types";
 
 /**
  * Props for `HeroDefault`.
  */
 export type HeroProps = {
-    data: Content.HeroSliceDefaultPrimary
+    data: HeroSliceDefaultPrimary
 };
 
 /**

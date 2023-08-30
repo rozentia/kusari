@@ -1,16 +1,17 @@
 import Section from "@/components/Section";
 import Image from "@/components/Image"
-import { Content, isFilled } from "@prismicio/client";
+import { isFilled } from "@prismicio/client";
 import { PrismicNextImage, PrismicNextLink } from "@prismicio/next";
 import Heading from "@/components/Heading";
 import Button from "@/components/Button";
 import Generating from "@/components/Generating";
+import { HeroSliceVerticalPrimary } from "@/prismicio-types";
 
 /**
  * Props for `HeroVertical`.
  */
 export type HeroProps = {
-    data: Content.HeroSliceVerticalPrimary
+    data: HeroSliceVerticalPrimary
 };
 
 /**

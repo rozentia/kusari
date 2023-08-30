@@ -1,15 +1,15 @@
 import { kBodyStyle } from "@/constants/classNames";
-import { Content } from "@prismicio/client";
 import { SliceComponentProps } from "@prismicio/react";
 import ShowcaseDefault from "./ShowcaseDefault";
 import ShowcaseHorizontal from "./ShowcaseHorizontal";
 import ShowcaseHorizontalWithIcons from "./ShowcaseHorizontalWithIcons";
 import TripleFeatureShowcase from "./TripleFeatureShowcase";
+import { ShowcaseSlice } from "@/prismicio-types";
 
 /**
  * Props for `Showcase`.
  */
-export type ShowcaseProps = SliceComponentProps<Content.ShowcaseSlice>;
+export type ShowcaseProps = SliceComponentProps<ShowcaseSlice>;
 
 /**
  * Component for "Showcase" Slices.

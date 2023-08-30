@@ -1,15 +1,16 @@
 import { kBodyStyle } from "@/constants/classNames";
 import { createClient } from "@/prismicio";
-import { Content, isFilled } from "@prismicio/client";
+import { isFilled } from "@prismicio/client";
 import { SliceComponentProps } from "@prismicio/react";
 import { compact } from "lodash";
 import TestimonialsDefault from "./TestimonialsDefault";
 import TestimonialsQuoteSlideshow from "./TestimonialsQuoteSlideshow";
+import { TestimonialsSlice } from "@/prismicio-types";
 
 /**
  * Props for `Testimonials`.
  */
-export type TestimonialsProps = SliceComponentProps<Content.TestimonialsSlice>;
+export type TestimonialsProps = SliceComponentProps<TestimonialsSlice>;
 
 /**
  * Component for "Testimonials" Slices.

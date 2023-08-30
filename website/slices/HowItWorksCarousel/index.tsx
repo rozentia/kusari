@@ -6,7 +6,7 @@ import Image from "@/components/Image"
 import Section from "@/components/Section";
 import Tagline from "@/components/Tagline";
 import { kBodyStyle } from "@/constants/classNames";
-import { Content } from "@prismicio/client";
+import { HowItWorksCarouselSlice } from "@/prismicio-types";
 import { PrismicNextImage, PrismicNextLink } from "@prismicio/next";
 import { PrismicRichText, SliceComponentProps } from "@prismicio/react";
 import { Splide, SplideSlide, SplideTrack } from "@splidejs/react-splide";
@@ -16,7 +16,7 @@ import { useRef, useState } from "react";
  * Props for `HowItWorksCarousel`.
  */
 export type HowItWorksCarouselProps =
-  SliceComponentProps<Content.HowItWorksCarouselSlice>;
+  SliceComponentProps<HowItWorksCarouselSlice>;
 
 /**
  * Component for "HowItWorksCarousel" Slices.

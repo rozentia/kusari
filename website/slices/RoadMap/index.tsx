@@ -1,13 +1,13 @@
 import { kBodyStyle } from "@/constants/classNames";
-import { Content } from "@prismicio/client";
 import { SliceComponentProps } from "@prismicio/react";
 import RoadMapDefault from "./RoadmapDefault";
 import RoadMapDetail from "./RoadmapDetail";
+import { RoadMapSlice } from "@/prismicio-types";
 
 /**
  * Props for `RoadMap`.
  */
-export type RoadMapProps = SliceComponentProps<Content.RoadMapSlice>;
+export type RoadMapProps = SliceComponentProps<RoadMapSlice>;
 
 /**
  * Component for "RoadMap" Slices.

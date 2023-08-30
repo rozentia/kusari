@@ -1,15 +1,16 @@
 import { kBodyStyle } from "@/constants/classNames";
-import { Content, isFilled } from "@prismicio/client";
+import { isFilled } from "@prismicio/client";
 import { SliceComponentProps } from "@prismicio/react";
 import { createClient } from "@/prismicio";
 import { compact, flatten, map, uniq } from "lodash";
 import StructuredContent from "./StructuredContent";
+import { StructuredContentCollectionSlice } from "@/prismicio-types";
 
 /**
  * Props for `StructuredContentCollection`.
  */
 export type StructuredContentCollectionProps =
-  SliceComponentProps<Content.StructuredContentCollectionSlice>;
+  SliceComponentProps<StructuredContentCollectionSlice>;
 
 /**
  * Component for "StructuredContentCollection" Slices.

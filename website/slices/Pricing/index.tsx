@@ -1,11 +1,11 @@
 import { kBodyStyle } from "@/constants/classNames";
-import { Content } from "@prismicio/client";
+import { PricingSlice } from "@/prismicio-types";
 import { SliceComponentProps } from "@prismicio/react";
 
 /**
  * Props for `Pricing`.
  */
-export type PricingProps = SliceComponentProps<Content.PricingSlice>;
+export type PricingProps = SliceComponentProps<PricingSlice>;
 
 /**
  * Component for "Pricing" Slices.

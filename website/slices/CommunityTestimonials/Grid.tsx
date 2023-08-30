@@ -2,10 +2,10 @@
 
 import Masonry, { ResponsiveMasonry } from "react-responsive-masonry";
 import Comment from "./Comment";
-import { Content } from "@prismicio/client";
+import { TestimonialDocument } from "@/prismicio-types";
 
 type GridProps = {
-    items: (Content.TestimonialDocument<string> | undefined)[];
+    items: (TestimonialDocument<string> | undefined)[];
 };
 
 const Grid = ({ items }: GridProps) => {

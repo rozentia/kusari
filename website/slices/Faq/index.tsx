@@ -2,16 +2,16 @@
 
 import { useState } from "react";
 import { kBodyStyle } from "@/constants/classNames";
-import { Content } from "@prismicio/client";
 import { PrismicRichText, SliceComponentProps } from "@prismicio/react";
 import Section from "@/components/Section";
 import Heading from "@/components/Heading";
 import { kContactEmail } from "@/constants/config";
+import { FaqSlice } from "@/prismicio-types";
 
 /**
  * Props for `Faq`.
  */
-export type FaqProps = SliceComponentProps<Content.FaqSlice>;
+export type FaqProps = SliceComponentProps<FaqSlice>;
 
 /**
  * Component for "Faq" Slices.

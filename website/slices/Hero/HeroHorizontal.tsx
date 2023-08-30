@@ -1,14 +1,14 @@
 import Section from "@/components/Section";
 import Image from "@/components/Image"
-import { Content } from "@prismicio/client";
 import { PrismicNextImage } from "@prismicio/next";
 import Heading from "@/components/Heading";
+import { HeroSliceHorizontalPrimary } from "@/prismicio-types";
 
 /**
  * Props for `HeroHorizontal`.
  */
 export type HeroProps = {
-    data: Content.HeroSliceHorizontalPrimary
+    data: HeroSliceHorizontalPrimary
 };
 
 /**

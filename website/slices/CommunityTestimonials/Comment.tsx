@@ -1,10 +1,9 @@
-import Image from "@/components/Image";
-import { Content } from "@prismicio/client";
+import { TestimonialDocument } from "@/prismicio-types";
 import { PrismicNextImage } from "@prismicio/next";
 import { PrismicRichText } from "@prismicio/react";
 
 type CommentProps = {
-    comment: Content.TestimonialDocument<string> | undefined
+    comment: TestimonialDocument<string> | undefined
 };
 
 const Comment = ({ comment }: CommentProps) => comment 

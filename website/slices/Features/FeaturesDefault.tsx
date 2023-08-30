@@ -1,7 +1,6 @@
 "use client"
 
 import { useRef, useState } from "react";
-import { Content } from "@prismicio/client";
 import { PrismicNextImage, PrismicNextLink } from "@prismicio/next";
 import { JSXMapSerializer, PrismicRichText, SliceComponentProps } from "@prismicio/react";
 import { Splide, SplideSlide, SplideTrack } from "@splidejs/react-splide";
