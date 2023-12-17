@@ -1,6 +1,535 @@
 [
 	{
 		"__TYPE__": "SharedSliceContent",
+		"variation": "default",
+		"primary": {
+			"heading": {
+				"__TYPE__": "FieldContent",
+				"type": "Text",
+				"value": "Chat Smarter, Not Harder with Brainwave"
+			}
+		},
+		"items": [
+			{
+				"__TYPE__": "GroupItemContent",
+				"value": [
+					[
+						"title",
+						{
+							"__TYPE__": "FieldContent",
+							"type": "Text",
+							"value": "Ask anything"
+						}
+					],
+					[
+						"description",
+						{
+							"__TYPE__": "StructuredTextContent",
+							"value": [
+								{
+									"type": "paragraph",
+									"content": {
+										"text": "Velit aute nulla deserunt non non velit quis enim eiusmod dolore aute laboris elit."
+									}
+								}
+							]
+						}
+					],
+					[
+						"button_link",
+						{
+							"__TYPE__": "LinkContent",
+							"value": {
+								"__TYPE__": "ExternalLink",
+								"url": "http://twitter.com"
+							}
+						}
+					],
+					[
+						"button_text",
+						{
+							"__TYPE__": "FieldContent",
+							"type": "Text",
+							"value": "read more"
+						}
+					],
+					[
+						"icon_package",
+						{
+							"__TYPE__": "FieldContent",
+							"type": "Select",
+							"value": "ion"
+						}
+					],
+					[
+						"icon_name",
+						{
+							"__TYPE__": "FieldContent",
+							"type": "Text",
+							"value": "IoDiceOutline"
+						}
+					],
+					[
+						"image",
+						{
+							"origin": {
+								"id": "main",
+								"url": "https://images.unsplash.com/photo-1493119508027-2b584f234d6c",
+								"width": 3424,
+								"height": 3424
+							},
+							"url": "https://images.unsplash.com/photo-1493119508027-2b584f234d6c",
+							"width": 3424,
+							"height": 3424,
+							"edit": {
+								"zoom": 1,
+								"crop": {
+									"x": 0,
+									"y": 0
+								},
+								"background": "transparent"
+							},
+							"credits": null,
+							"alt": null,
+							"__TYPE__": "ImageContent",
+							"thumbnails": {}
+						}
+					],
+					[
+						"islight",
+						{
+							"__TYPE__": "BooleanContent",
+							"value": false
+						}
+					]
+				]
+			},
+			{
+				"__TYPE__": "GroupItemContent",
+				"value": [
+					[
+						"title",
+						{
+							"__TYPE__": "FieldContent",
+							"type": "Text",
+							"value": "Improve everyday"
+						}
+					],
+					[
+						"description",
+						{
+							"__TYPE__": "StructuredTextContent",
+							"value": [
+								{
+									"type": "paragraph",
+									"content": {
+										"text": "Velit dolore in est nulla. Aliqua Lorem labore fugiat incididunt cillum veniam sunt."
+									}
+								}
+							]
+						}
+					],
+					[
+						"button_link",
+						{
+							"__TYPE__": "LinkContent",
+							"value": {
+								"__TYPE__": "ExternalLink",
+								"url": "https://slicemachine.dev"
+							}
+						}
+					],
+					[
+						"button_text",
+						{
+							"__TYPE__": "FieldContent",
+							"type": "Text",
+							"value": "try it out"
+						}
+					],
+					[
+						"icon_package",
+						{
+							"__TYPE__": "FieldContent",
+							"type": "Select",
+							"value": "ion"
+						}
+					],
+					[
+						"icon_name",
+						{
+							"__TYPE__": "FieldContent",
+							"type": "Text",
+							"value": "IoBeerOutline"
+						}
+					],
+					[
+						"image",
+						{
+							"origin": {
+								"id": "main",
+								"url": "https://images.unsplash.com/photo-1606248897732-2c5ffe759c04",
+								"width": 4000,
+								"height": 4000
+							},
+							"url": "https://images.unsplash.com/photo-1606248897732-2c5ffe759c04",
+							"width": 4000,
+							"height": 4000,
+							"edit": {
+								"zoom": 1,
+								"crop": {
+									"x": 0,
+									"y": 0
+								},
+								"background": "transparent"
+							},
+							"credits": null,
+							"alt": null,
+							"__TYPE__": "ImageContent",
+							"thumbnails": {}
+						}
+					],
+					[
+						"islight",
+						{
+							"__TYPE__": "BooleanContent",
+							"value": true
+						}
+					]
+				]
+			},
+			{
+				"__TYPE__": "GroupItemContent",
+				"value": [
+					[
+						"title",
+						{
+							"__TYPE__": "FieldContent",
+							"type": "Text",
+							"value": "Connect everywhere"
+						}
+					],
+					[
+						"description",
+						{
+							"__TYPE__": "StructuredTextContent",
+							"value": [
+								{
+									"type": "paragraph",
+									"content": {
+										"text": "Enim reprehenderit duis irure irure ex occaecat laborum et ullamco proident pariatur id. Occaecat nostrud eu dolore cupidatat. Dolor qui reprehenderit minim sunt."
+									}
+								}
+							]
+						}
+					],
+					[
+						"button_link",
+						{
+							"__TYPE__": "LinkContent",
+							"value": {
+								"__TYPE__": "ExternalLink",
+								"url": "https://prismic.io"
+							}
+						}
+					],
+					[
+						"button_text",
+						{
+							"__TYPE__": "FieldContent",
+							"type": "Text",
+							"value": "dive in"
+						}
+					],
+					[
+						"icon_package",
+						{
+							"__TYPE__": "FieldContent",
+							"value": "ion",
+							"type": "Select"
+						}
+					],
+					[
+						"icon_name",
+						{
+							"__TYPE__": "FieldContent",
+							"type": "Text",
+							"value": "IoBonfireOutline"
+						}
+					],
+					[
+						"image",
+						{
+							"origin": {
+								"id": "main",
+								"url": "https://images.unsplash.com/photo-1525547719571-a2d4ac8945e2",
+								"width": 3648,
+								"height": 4560
+							},
+							"url": "https://images.unsplash.com/photo-1525547719571-a2d4ac8945e2",
+							"width": 3648,
+							"height": 4560,
+							"edit": {
+								"zoom": 1,
+								"crop": {
+									"x": 0,
+									"y": 0
+								},
+								"background": "transparent"
+							},
+							"credits": null,
+							"alt": null,
+							"__TYPE__": "ImageContent",
+							"thumbnails": {}
+						}
+					],
+					[
+						"islight",
+						{
+							"__TYPE__": "BooleanContent",
+							"value": false
+						}
+					]
+				]
+			},
+			{
+				"__TYPE__": "GroupItemContent",
+				"value": [
+					[
+						"title",
+						{
+							"__TYPE__": "FieldContent",
+							"type": "Text",
+							"value": "Fast responding"
+						}
+					],
+					[
+						"description",
+						{
+							"__TYPE__": "StructuredTextContent",
+							"value": [
+								{
+									"type": "paragraph",
+									"content": {
+										"text": "Dolore consectetur quis anim ad est cillum officia ex. Ullamco sint proident ullamco sit."
+									}
+								}
+							]
+						}
+					],
+					[
+						"image",
+						{
+							"url": "https://images.unsplash.com/photo-1547394765-185e1e68f34e?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwxM3x8Y29tcHV0ZXJ8ZW58MHx8fHwxNjkyNTU1Njk1fDA&ixlib=rb-4.0.3&q=85",
+							"origin": {
+								"id": "WkfDrhxDMC8",
+								"url": "https://images.unsplash.com/photo-1547394765-185e1e68f34e?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwxM3x8Y29tcHV0ZXJ8ZW58MHx8fHwxNjkyNTU1Njk1fDA&ixlib=rb-4.0.3&q=85",
+								"width": 6000,
+								"height": 4000
+							},
+							"width": 6000,
+							"height": 4000,
+							"edit": {
+								"background": "transparent",
+								"zoom": 1,
+								"crop": {
+									"x": 0,
+									"y": 0
+								}
+							},
+							"credits": null,
+							"alt": null,
+							"__TYPE__": "ImageContent",
+							"thumbnails": {}
+						}
+					],
+					[
+						"icon_package",
+						{
+							"__TYPE__": "FieldContent",
+							"type": "Select",
+							"value": "lineAwesome"
+						}
+					],
+					[
+						"icon_name",
+						{
+							"__TYPE__": "FieldContent",
+							"type": "Text",
+							"value": "LiaBeerSolid"
+						}
+					]
+				]
+			},
+			{
+				"__TYPE__": "GroupItemContent",
+				"value": [
+					[
+						"title",
+						{
+							"__TYPE__": "FieldContent",
+							"type": "Text",
+							"value": "Ask anything"
+						}
+					],
+					[
+						"description",
+						{
+							"__TYPE__": "StructuredTextContent",
+							"value": [
+								{
+									"type": "paragraph",
+									"content": {
+										"text": "Ad qui ut est elit esse non cupidatat enim. Aute culpa enim aute dolor mollit id reprehenderit est aute irure."
+									}
+								}
+							]
+						}
+					],
+					[
+						"image",
+						{
+							"url": "https://images.unsplash.com/photo-1515879218367-8466d910aaa4?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHw4fHxjb2RlfGVufDB8fHx8MTY5MjU1NTg0M3ww&ixlib=rb-4.0.3&q=85",
+							"origin": {
+								"id": "ieic5Tq8YMk",
+								"url": "https://images.unsplash.com/photo-1515879218367-8466d910aaa4?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHw4fHxjb2RlfGVufDB8fHx8MTY5MjU1NTg0M3ww&ixlib=rb-4.0.3&q=85",
+								"width": 6016,
+								"height": 4016
+							},
+							"width": 6016,
+							"height": 4016,
+							"edit": {
+								"background": "transparent",
+								"zoom": 1,
+								"crop": {
+									"x": 0,
+									"y": 0
+								}
+							},
+							"credits": null,
+							"alt": null,
+							"__TYPE__": "ImageContent",
+							"thumbnails": {}
+						}
+					],
+					[
+						"button_link",
+						{
+							"__TYPE__": "LinkContent",
+							"value": {
+								"__TYPE__": "ExternalLink",
+								"url": "https://kusari.io"
+							}
+						}
+					],
+					[
+						"icon_package",
+						{
+							"__TYPE__": "FieldContent",
+							"type": "Select",
+							"value": "lineAwesome"
+						}
+					],
+					[
+						"icon_name",
+						{
+							"__TYPE__": "FieldContent",
+							"type": "Text",
+							"value": "LiaAtomSolid"
+						}
+					]
+				]
+			},
+			{
+				"__TYPE__": "GroupItemContent",
+				"value": [
+					[
+						"title",
+						{
+							"__TYPE__": "FieldContent",
+							"type": "Text",
+							"value": "Improve everyday"
+						}
+					],
+					[
+						"description",
+						{
+							"__TYPE__": "StructuredTextContent",
+							"value": [
+								{
+									"type": "paragraph",
+									"content": {
+										"text": "Consequat magna Lorem nostrud id officia ex commodo labore ea. Excepteur nisi officia voluptate deserunt officia anim quis."
+									}
+								}
+							]
+						}
+					],
+					[
+						"image",
+						{
+							"url": "https://images.unsplash.com/photo-1550745165-9bc0b252726f?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwyN3x8Y29tcHV0ZXJ8ZW58MHx8fHwxNjkyNTU1Njk1fDA&ixlib=rb-4.0.3&q=85",
+							"origin": {
+								"id": "p0j-mE6mGo4",
+								"url": "https://images.unsplash.com/photo-1550745165-9bc0b252726f?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwyN3x8Y29tcHV0ZXJ8ZW58MHx8fHwxNjkyNTU1Njk1fDA&ixlib=rb-4.0.3&q=85",
+								"width": 6048,
+								"height": 4032
+							},
+							"width": 6048,
+							"height": 4032,
+							"edit": {
+								"background": "transparent",
+								"zoom": 1,
+								"crop": {
+									"x": 0,
+									"y": 0
+								}
+							},
+							"credits": null,
+							"alt": null,
+							"__TYPE__": "ImageContent",
+							"thumbnails": {}
+						}
+					],
+					[
+						"button_link",
+						{
+							"__TYPE__": "LinkContent",
+							"value": {
+								"__TYPE__": "ExternalLink",
+								"url": "http://kusari.io"
+							}
+						}
+					],
+					[
+						"islight",
+						{
+							"__TYPE__": "BooleanContent",
+							"value": true
+						}
+					],
+					[
+						"icon_package",
+						{
+							"__TYPE__": "FieldContent",
+							"type": "Select",
+							"value": "lineAwesome"
+						}
+					],
+					[
+						"icon_name",
+						{
+							"__TYPE__": "FieldContent",
+							"type": "Text",
+							"value": "LiaBalanceScaleSolid"
+						}
+					]
+				]
+			}
+		]
+	},
+	{
+		"__TYPE__": "SharedSliceContent",
 		"variation": "featuresGrid",
 		"primary": {},
 		"items": [
@@ -276,541 +805,6 @@
 							"__TYPE__": "FieldContent",
 							"type": "Text",
 							"value": "AiOutlineAlert"
-						}
-					]
-				]
-			}
-		]
-	},
-	{
-		"__TYPE__": "SharedSliceContent",
-		"variation": "default",
-		"primary": {
-			"heading": {
-				"__TYPE__": "FieldContent",
-				"type": "Text",
-				"value": "Chat Smarter, Not Harder with Brainwave"
-			}
-		},
-		"items": [
-			{
-				"__TYPE__": "GroupItemContent",
-				"value": [
-					[
-						"title",
-						{
-							"__TYPE__": "FieldContent",
-							"type": "Text",
-							"value": "Ask anything"
-						}
-					],
-					[
-						"description",
-						{
-							"__TYPE__": "StructuredTextContent",
-							"value": [
-								{
-									"type": "paragraph",
-									"content": {
-										"text": "Lets users quickly find answers to their questions without having to search through multiple sources.",
-										"spans": []
-									},
-									"direction": "ltr"
-								}
-							]
-						}
-					],
-					[
-						"button_link",
-						{
-							"__TYPE__": "LinkContent",
-							"value": {
-								"__TYPE__": "ExternalLink",
-								"url": "http://twitter.com"
-							}
-						}
-					],
-					[
-						"button_text",
-						{
-							"__TYPE__": "FieldContent",
-							"type": "Text",
-							"value": "read more"
-						}
-					],
-					[
-						"icon_package",
-						{
-							"__TYPE__": "FieldContent",
-							"type": "Select",
-							"value": "ion"
-						}
-					],
-					[
-						"icon_name",
-						{
-							"__TYPE__": "FieldContent",
-							"type": "Text",
-							"value": "IoDiceOutline"
-						}
-					],
-					[
-						"image",
-						{
-							"origin": {
-								"id": "main",
-								"url": "https://images.unsplash.com/photo-1493119508027-2b584f234d6c",
-								"width": 3424,
-								"height": 3424
-							},
-							"url": "https://images.unsplash.com/photo-1493119508027-2b584f234d6c",
-							"width": 3424,
-							"height": 3424,
-							"edit": {
-								"zoom": 1,
-								"crop": {
-									"x": 0,
-									"y": 0
-								},
-								"background": "transparent"
-							},
-							"credits": null,
-							"alt": null,
-							"__TYPE__": "ImageContent",
-							"thumbnails": {}
-						}
-					],
-					[
-						"islight",
-						{
-							"__TYPE__": "BooleanContent",
-							"value": false
-						}
-					]
-				]
-			},
-			{
-				"__TYPE__": "GroupItemContent",
-				"value": [
-					[
-						"title",
-						{
-							"__TYPE__": "FieldContent",
-							"type": "Text",
-							"value": "Improve everyday"
-						}
-					],
-					[
-						"description",
-						{
-							"__TYPE__": "StructuredTextContent",
-							"value": [
-								{
-									"type": "paragraph",
-									"content": {
-										"text": "The app uses natural language processing to understand user queries and provide accurate and relevant responses.",
-										"spans": []
-									},
-									"direction": "ltr"
-								}
-							]
-						}
-					],
-					[
-						"button_link",
-						{
-							"__TYPE__": "LinkContent",
-							"value": {
-								"__TYPE__": "ExternalLink",
-								"url": "https://slicemachine.dev"
-							}
-						}
-					],
-					[
-						"button_text",
-						{
-							"__TYPE__": "FieldContent",
-							"type": "Text",
-							"value": "try it out"
-						}
-					],
-					[
-						"icon_package",
-						{
-							"__TYPE__": "FieldContent",
-							"type": "Select",
-							"value": "ion"
-						}
-					],
-					[
-						"icon_name",
-						{
-							"__TYPE__": "FieldContent",
-							"type": "Text",
-							"value": "IoBeerOutline"
-						}
-					],
-					[
-						"image",
-						{
-							"origin": {
-								"id": "main",
-								"url": "https://images.unsplash.com/photo-1606248897732-2c5ffe759c04",
-								"width": 4000,
-								"height": 4000
-							},
-							"url": "https://images.unsplash.com/photo-1606248897732-2c5ffe759c04",
-							"width": 4000,
-							"height": 4000,
-							"edit": {
-								"zoom": 1,
-								"crop": {
-									"x": 0,
-									"y": 0
-								},
-								"background": "transparent"
-							},
-							"credits": null,
-							"alt": null,
-							"__TYPE__": "ImageContent",
-							"thumbnails": {}
-						}
-					],
-					[
-						"islight",
-						{
-							"__TYPE__": "BooleanContent",
-							"value": true
-						}
-					]
-				]
-			},
-			{
-				"__TYPE__": "GroupItemContent",
-				"value": [
-					[
-						"title",
-						{
-							"__TYPE__": "FieldContent",
-							"type": "Text",
-							"value": "Connect everywhere"
-						}
-					],
-					[
-						"description",
-						{
-							"__TYPE__": "StructuredTextContent",
-							"value": [
-								{
-									"type": "paragraph",
-									"content": {
-										"text": "Connect with the AI chatbot from anywhere, on any device, making it more accessible and convenient.",
-										"spans": []
-									},
-									"direction": "ltr"
-								}
-							]
-						}
-					],
-					[
-						"button_link",
-						{
-							"__TYPE__": "LinkContent",
-							"value": {
-								"__TYPE__": "ExternalLink",
-								"url": "https://prismic.io"
-							}
-						}
-					],
-					[
-						"button_text",
-						{
-							"__TYPE__": "FieldContent",
-							"type": "Text",
-							"value": "dive in"
-						}
-					],
-					[
-						"icon_package",
-						{
-							"__TYPE__": "FieldContent",
-							"value": "ion",
-							"type": "Select"
-						}
-					],
-					[
-						"icon_name",
-						{
-							"__TYPE__": "FieldContent",
-							"type": "Text",
-							"value": "IoBonfireOutline"
-						}
-					],
-					[
-						"image",
-						{
-							"origin": {
-								"id": "main",
-								"url": "https://images.unsplash.com/photo-1525547719571-a2d4ac8945e2",
-								"width": 3648,
-								"height": 4560
-							},
-							"url": "https://images.unsplash.com/photo-1525547719571-a2d4ac8945e2",
-							"width": 3648,
-							"height": 4560,
-							"edit": {
-								"zoom": 1,
-								"crop": {
-									"x": 0,
-									"y": 0
-								},
-								"background": "transparent"
-							},
-							"credits": null,
-							"alt": null,
-							"__TYPE__": "ImageContent",
-							"thumbnails": {}
-						}
-					],
-					[
-						"islight",
-						{
-							"__TYPE__": "BooleanContent",
-							"value": false
-						}
-					]
-				]
-			},
-			{
-				"__TYPE__": "GroupItemContent",
-				"value": [
-					[
-						"title",
-						{
-							"__TYPE__": "FieldContent",
-							"type": "Text",
-							"value": "Fast responding"
-						}
-					],
-					[
-						"description",
-						{
-							"__TYPE__": "StructuredTextContent",
-							"value": [
-								{
-									"type": "paragraph",
-									"content": {
-										"text": "Lets users quickly find answers to their questions without having to search through multiple sources.",
-										"spans": []
-									},
-									"direction": "ltr"
-								}
-							]
-						}
-					],
-					[
-						"image",
-						{
-							"__TYPE__": "ImageContent",
-							"url": "https://images.unsplash.com/photo-1547394765-185e1e68f34e?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwxM3x8Y29tcHV0ZXJ8ZW58MHx8fHwxNjkyNTU1Njk1fDA&ixlib=rb-4.0.3&q=85",
-							"origin": {
-								"id": "WkfDrhxDMC8",
-								"url": "https://images.unsplash.com/photo-1547394765-185e1e68f34e?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwxM3x8Y29tcHV0ZXJ8ZW58MHx8fHwxNjkyNTU1Njk1fDA&ixlib=rb-4.0.3&q=85",
-								"width": 6000,
-								"height": 4000
-							},
-							"width": 6000,
-							"height": 4000,
-							"edit": {
-								"background": "transparent",
-								"zoom": 1,
-								"crop": {
-									"x": 0,
-									"y": 0
-								}
-							},
-							"thumbnails": {}
-						}
-					],
-					[
-						"icon_package",
-						{
-							"__TYPE__": "FieldContent",
-							"type": "Select",
-							"value": "lineAwesome"
-						}
-					],
-					[
-						"icon_name",
-						{
-							"__TYPE__": "FieldContent",
-							"type": "Text",
-							"value": "LiaBeerSolid"
-						}
-					]
-				]
-			},
-			{
-				"__TYPE__": "GroupItemContent",
-				"value": [
-					[
-						"title",
-						{
-							"__TYPE__": "FieldContent",
-							"type": "Text",
-							"value": "Ask anything"
-						}
-					],
-					[
-						"description",
-						{
-							"__TYPE__": "StructuredTextContent",
-							"value": [
-								{
-									"type": "paragraph",
-									"content": {
-										"text": "Lets users quickly find answers to their questions without having to search through multiple sources.",
-										"spans": []
-									},
-									"direction": "ltr"
-								}
-							]
-						}
-					],
-					[
-						"image",
-						{
-							"__TYPE__": "ImageContent",
-							"url": "https://images.unsplash.com/photo-1515879218367-8466d910aaa4?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHw4fHxjb2RlfGVufDB8fHx8MTY5MjU1NTg0M3ww&ixlib=rb-4.0.3&q=85",
-							"origin": {
-								"id": "ieic5Tq8YMk",
-								"url": "https://images.unsplash.com/photo-1515879218367-8466d910aaa4?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHw4fHxjb2RlfGVufDB8fHx8MTY5MjU1NTg0M3ww&ixlib=rb-4.0.3&q=85",
-								"width": 6016,
-								"height": 4016
-							},
-							"width": 6016,
-							"height": 4016,
-							"edit": {
-								"background": "transparent",
-								"zoom": 1,
-								"crop": {
-									"x": 0,
-									"y": 0
-								}
-							},
-							"thumbnails": {}
-						}
-					],
-					[
-						"button_link",
-						{
-							"__TYPE__": "LinkContent",
-							"value": {
-								"__TYPE__": "ExternalLink",
-								"url": "https://kusari.io"
-							}
-						}
-					],
-					[
-						"icon_package",
-						{
-							"__TYPE__": "FieldContent",
-							"type": "Select",
-							"value": "lineAwesome"
-						}
-					],
-					[
-						"icon_name",
-						{
-							"__TYPE__": "FieldContent",
-							"type": "Text",
-							"value": "LiaAtomSolid"
-						}
-					]
-				]
-			},
-			{
-				"__TYPE__": "GroupItemContent",
-				"value": [
-					[
-						"title",
-						{
-							"__TYPE__": "FieldContent",
-							"type": "Text",
-							"value": "Improve everyday"
-						}
-					],
-					[
-						"description",
-						{
-							"__TYPE__": "StructuredTextContent",
-							"value": [
-								{
-									"type": "paragraph",
-									"content": {
-										"text": "The app uses natural language processing to understand user queries and provide accurate and relevant responses.",
-										"spans": []
-									},
-									"direction": "ltr"
-								}
-							]
-						}
-					],
-					[
-						"image",
-						{
-							"__TYPE__": "ImageContent",
-							"url": "https://images.unsplash.com/photo-1550745165-9bc0b252726f?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwyN3x8Y29tcHV0ZXJ8ZW58MHx8fHwxNjkyNTU1Njk1fDA&ixlib=rb-4.0.3&q=85",
-							"origin": {
-								"id": "p0j-mE6mGo4",
-								"url": "https://images.unsplash.com/photo-1550745165-9bc0b252726f?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwyN3x8Y29tcHV0ZXJ8ZW58MHx8fHwxNjkyNTU1Njk1fDA&ixlib=rb-4.0.3&q=85",
-								"width": 6048,
-								"height": 4032
-							},
-							"width": 6048,
-							"height": 4032,
-							"edit": {
-								"background": "transparent",
-								"zoom": 1,
-								"crop": {
-									"x": 0,
-									"y": 0
-								}
-							},
-							"thumbnails": {}
-						}
-					],
-					[
-						"button_link",
-						{
-							"__TYPE__": "LinkContent",
-							"value": {
-								"__TYPE__": "ExternalLink",
-								"url": "http://kusari.io"
-							}
-						}
-					],
-					[
-						"islight",
-						{
-							"__TYPE__": "BooleanContent",
-							"value": true
-						}
-					],
-					[
-						"icon_package",
-						{
-							"__TYPE__": "FieldContent",
-							"type": "Select",
-							"value": "lineAwesome"
-						}
-					],
-					[
-						"icon_name",
-						{
-							"__TYPE__": "FieldContent",
-							"type": "Text",
-							"value": "LiaBalanceScaleSolid"
 						}
 					]
 				]

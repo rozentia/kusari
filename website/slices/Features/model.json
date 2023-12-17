@@ -14,13 +14,19 @@
       "primary": {
         "heading": {
           "type": "Text",
-          "config": { "label": "Heading", "placeholder": "" }
+          "config": {
+            "label": "Heading",
+            "placeholder": ""
+          }
         }
       },
       "items": {
         "title": {
           "type": "Text",
-          "config": { "label": "Title", "placeholder": "" }
+          "config": {
+            "label": "Title",
+            "placeholder": ""
+          }
         },
         "description": {
           "type": "StructuredText",
@@ -28,12 +34,16 @@
             "label": "Description",
             "placeholder": "",
             "allowTargetBlank": true,
-            "single": "paragraph,strong,em"
+            "multi": "paragraph,strong,em"
           }
         },
         "image": {
           "type": "Image",
-          "config": { "label": "Image", "constraint": {}, "thumbnails": [] }
+          "config": {
+            "label": "Image",
+            "constraint": {},
+            "thumbnails": []
+          }
         },
         "button_link": {
           "type": "Link",
@@ -45,7 +55,10 @@
         },
         "button_text": {
           "type": "Text",
-          "config": { "label": "Button Text", "placeholder": "" }
+          "config": {
+            "label": "Button Text",
+            "placeholder": ""
+          }
         },
         "icon_package": {
           "type": "Select",
@@ -66,7 +79,10 @@
         },
         "icon_name": {
           "type": "Text",
-          "config": { "label": "Icon Name", "placeholder": "" }
+          "config": {
+            "label": "Icon Name",
+            "placeholder": ""
+          }
         },
         "islight": {
           "type": "Boolean",
@@ -90,7 +106,10 @@
       "items": {
         "title": {
           "type": "Text",
-          "config": { "label": "Title", "placeholder": "" }
+          "config": {
+            "label": "Title",
+            "placeholder": ""
+          }
         },
         "description": {
           "type": "StructuredText",
@@ -120,7 +139,10 @@
         },
         "icon_name": {
           "type": "Text",
-          "config": { "label": "Icon Name", "placeholder": "" }
+          "config": {
+            "label": "Icon Name",
+            "placeholder": ""
+          }
         }
       }
     }

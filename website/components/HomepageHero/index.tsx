@@ -38,7 +38,7 @@ const HomepageHero = ({ title, titleHighlight, tagline, buttonLabel, buttonLink}
             <div className="container relative" ref={parallaxRef}>
                 <div className="relative z-1 max-w-[62rem] mx-auto mb-[3.875rem] text-center md:mb-20 lg:mb-[6.25rem]">
                     <h1 className="h1 mb-6">
-                        {title}
+                        {`${title} `}
                         <span className="inline-block relative">
                             {titleHighlight}
                             <Image
